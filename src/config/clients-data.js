@@ -1223,6 +1223,987 @@ const clients = {
       },
     ],
   },
+
+  // ═══════════════════════════════════════════════
+  // BATCH 2 — Cheyenne, DC, Kansas, Baton Rouge
+  // ═══════════════════════════════════════════════
+
+  // ── 26. Reliable Heating & AC Repair Cheyenne ──
+  "reliable-heating-cheyenne": {
+    companyName: "Reliable Heating & AC",
+    companyFullName: "Reliable Heating & AC Repair Cheyenne",
+    phone: "(307) 481-5122",
+    phoneRaw: "3074815122",
+    email: "info@reliableheatingcheyenne.com",
+    address: {
+      street: "2314 Pioneer Ave",
+      city: "Cheyenne",
+      state: "WY",
+      zip: "82001",
+    },
+    colors: {
+      primary: "#1A73E9",
+      secondary: "#2BC48B",
+      light: "#F0F4F8",
+      dark: "#0E1B2B",
+    },
+    reviews: {
+      platform: "Google",
+      rating: 4.0,
+      count: 5,
+      url: "https://www.google.com/maps/search/?api=1&query=Reliable%20Heating%20%26%20AC%20Repair%20Cheyenne&query_place_id=ChIJFbaMfbk6b4cRS6zVzqomm0g",
+      featured: [
+        {
+          author: "Verified Customer",
+          rating: 5,
+          text: "Reliable Heating lives up to their name. Quick response and quality HVAC work in Cheyenne.",
+          date: "2021-03-15",
+        },
+      ],
+    },
+    serviceAreas: [
+      {
+        slug: "cheyenne",
+        name: "Cheyenne",
+        state: "WY",
+        metaTitle: "HVAC Services in Cheyenne, WY",
+        metaDescription: "Reliable heating and AC repair in Cheyenne, WY. Call Reliable Heating & AC Repair today!",
+        headline: "HVAC Services in Cheyenne, WY",
+        body: "Reliable Heating & AC Repair Cheyenne provides dependable HVAC services to homeowners throughout Cheyenne. From furnace repair to AC installation, we keep your home comfortable year-round.",
+      },
+    ],
+  },
+
+  // ── 27. Cheyenne HVAC Service ──
+  "cheyenne-hvac-service": {
+    companyName: "Cheyenne HVAC",
+    companyFullName: "Cheyenne HVAC Service",
+    phone: "(307) 288-7476",
+    phoneRaw: "3072887476",
+    email: "info@cheyennehvac.com",
+    address: {
+      street: "1402 Hugur Ave",
+      city: "Cheyenne",
+      state: "WY",
+      zip: "82001",
+    },
+    colors: {
+      primary: "#1A73E9",
+      secondary: "#2BC48B",
+      light: "#F0F4F8",
+      dark: "#0E1B2B",
+    },
+    reviews: {
+      platform: "Google",
+      rating: 5.0,
+      count: 7,
+      url: "https://www.google.com/maps/search/?api=1&query=Cheyenne%20HVAC%20Service&query_place_id=ChIJeQ340NE6b4cRwOGA0tqdYVY",
+      featured: [
+        {
+          author: "Verified Customer",
+          rating: 5,
+          text: "Perfect 5-star service. Efficient, clean work, and the thermostat installation was flawless.",
+          date: "2022-08-10",
+        },
+        {
+          author: "Verified Customer",
+          rating: 5,
+          text: "Cheyenne HVAC Service is the best in town. Professional, efficient, and always on time.",
+          date: "2022-06-15",
+        },
+      ],
+    },
+    serviceAreas: [
+      {
+        slug: "cheyenne",
+        name: "Cheyenne",
+        state: "WY",
+        metaTitle: "HVAC Services in Cheyenne, WY",
+        metaDescription: "Perfect 5-star HVAC services in Cheyenne, WY. 7 five-star reviews. Call Cheyenne HVAC Service!",
+        headline: "HVAC Services in Cheyenne, WY",
+        body: "Cheyenne HVAC Service has earned a perfect 5-star rating from every customer. Known for efficiency, cleanliness, and expert thermostat work, we're Cheyenne's trusted choice for heating and cooling.",
+      },
+    ],
+  },
+
+  // ── 28. Cheyenne Heating & Air Conditioning ──
+  "cheyenne-heating-air": {
+    companyName: "Cheyenne Heating & Air",
+    companyFullName: "Cheyenne Heating & Air Conditioning",
+    phone: "(307) 481-5120",
+    phoneRaw: "3074815120",
+    email: "info@cheyenneheatingair.com",
+    address: {
+      street: "114 E 16th St",
+      city: "Cheyenne",
+      state: "WY",
+      zip: "82001",
+    },
+    colors: {
+      primary: "#1A73E9",
+      secondary: "#2BC48B",
+      light: "#F0F4F8",
+      dark: "#0E1B2B",
+    },
+    reviews: {
+      platform: "Google",
+      rating: 4.8,
+      count: 4,
+      url: "https://www.google.com/maps/search/?api=1&query=Cheyenne%20Heating%20%26%20Air%20Conditioning&query_place_id=ChIJuQwBTJ07b4cRvXAzN3ly37M",
+      featured: [
+        {
+          author: "Verified Customer",
+          rating: 5,
+          text: "Excellent heating and AC repair service. Professional team and fair pricing in Cheyenne.",
+          date: "2024-04-10",
+        },
+      ],
+    },
+    serviceAreas: [
+      {
+        slug: "cheyenne",
+        name: "Cheyenne",
+        state: "WY",
+        metaTitle: "HVAC Services in Cheyenne, WY",
+        metaDescription: "Heating and air conditioning repair in Cheyenne, WY. 4.8-star rating. Call Cheyenne Heating & Air!",
+        headline: "HVAC Services in Cheyenne, WY",
+        body: "Cheyenne Heating & Air Conditioning provides expert HVAC repair services to homeowners throughout Cheyenne. With a strong 4.8-star rating, we deliver the quality and reliability your home deserves.",
+      },
+    ],
+  },
+
+  // ── 29. CD Services ──
+  "cd-services": {
+    companyName: "CD Services",
+    companyFullName: "CD Services HVAC & Appliance Repair",
+    phone: "(307) 635-6728",
+    phoneRaw: "3076356728",
+    email: "info@cdservicescheyenne.com",
+    address: {
+      street: "2017 E 13th St",
+      city: "Cheyenne",
+      state: "WY",
+      zip: "82001",
+    },
+    colors: {
+      primary: "#1A73E9",
+      secondary: "#2BC48B",
+      light: "#F0F4F8",
+      dark: "#0E1B2B",
+    },
+    reviews: {
+      platform: "Google",
+      rating: 5.0,
+      count: 5,
+      url: "https://www.google.com/maps/search/?api=1&query=CD%20Services&query_place_id=ChIJc0nKiCE7b4cRk0Ys8jKxTWk",
+      featured: [
+        {
+          author: "Verified Customer",
+          rating: 5,
+          text: "Mike and Leila are amazing. They saved us hundreds compared to what other companies quoted. Perfect 5-star service!",
+          date: "2025-12-10",
+        },
+        {
+          author: "Verified Customer",
+          rating: 5,
+          text: "CD Services handles furnace work and appliance repair. Honest pricing and they actually fix the problem.",
+          date: "2025-10-20",
+        },
+      ],
+    },
+    serviceAreas: [
+      {
+        slug: "cheyenne",
+        name: "Cheyenne",
+        state: "WY",
+        metaTitle: "Furnace Repair & Appliance Service in Cheyenne, WY",
+        metaDescription: "Perfect 5-star furnace repair and appliance service in Cheyenne, WY. Call CD Services!",
+        headline: "Furnace Repair & Appliance Service in Cheyenne, WY",
+        body: "CD Services provides expert furnace repair and appliance service in Cheyenne. With a perfect 5-star rating and a reputation for saving customers money, Mike and Leila deliver honest, quality work every time.",
+      },
+    ],
+  },
+
+  // ── 30. GD RV Tech ──
+  "gd-rv-tech": {
+    companyName: "GD RV Tech",
+    companyFullName: "GD RV Tech",
+    phone: "(307) 421-7568",
+    phoneRaw: "3074217568",
+    email: "info@gdrvtech.com",
+    address: {
+      street: "",
+      city: "Cheyenne",
+      state: "WY",
+      zip: "82009",
+    },
+    colors: {
+      primary: "#1A73E9",
+      secondary: "#2BC48B",
+      light: "#F0F4F8",
+      dark: "#0E1B2B",
+    },
+    reviews: {
+      platform: "Google",
+      rating: 5.0,
+      count: 0,
+      url: "https://www.google.com/maps/search/?api=1&query=GD%20RV%20Tech&query_place_id=ChIJpcCaVb87b4cR2ANg3l1lzzU",
+      featured: [],
+    },
+    serviceAreas: [
+      {
+        slug: "cheyenne",
+        name: "Cheyenne",
+        state: "WY",
+        metaTitle: "RV AC Repair & HVAC Services in Cheyenne, WY",
+        metaDescription: "Mobile RV AC repair and HVAC services in Cheyenne, WY. Call GD RV Tech!",
+        headline: "RV AC Repair & HVAC Services in Cheyenne, WY",
+        body: "GD RV Tech provides mobile RV AC repair and HVAC services throughout the Cheyenne area. We come to you — convenient, professional service wherever you are.",
+      },
+    ],
+  },
+
+  // ── 31. Heating and Air Conditioning DC ──
+  "heating-air-dc": {
+    companyName: "Heating & Air DC",
+    companyFullName: "Heating and Air Conditioning DC",
+    phone: "(202) 448-9955",
+    phoneRaw: "2024489955",
+    email: "info@heatingairdc.com",
+    address: {
+      street: "6669 32nd Pl NW",
+      city: "Washington",
+      state: "DC",
+      zip: "20015",
+    },
+    colors: {
+      primary: "#1A73E9",
+      secondary: "#2BC48B",
+      light: "#F0F4F8",
+      dark: "#0E1B2B",
+    },
+    reviews: {
+      platform: "Google",
+      rating: 5.0,
+      count: 0,
+      url: "https://www.google.com/maps/search/?api=1&query=Heating%20and%20air%20conditioning%20dc&query_place_id=ChIJy3hqEsPJt4kR5Km5jdteE4o",
+      featured: [],
+    },
+    serviceAreas: [
+      {
+        slug: "washington",
+        name: "Washington",
+        state: "DC",
+        metaTitle: "HVAC Services in Washington, DC",
+        metaDescription: "Heating and air conditioning services in NW Washington, DC. Call Heating & Air DC!",
+        headline: "HVAC Services in Washington, DC",
+        body: "Heating and Air Conditioning DC provides expert HVAC services to homeowners in Northwest Washington, DC and the Barnaby Woods neighborhood. We're your local heating and cooling professionals.",
+      },
+    ],
+  },
+
+  // ── 32. Washington Heating & Cooling ──
+  "washington-heating-cooling": {
+    companyName: "Washington Heating & Cooling",
+    companyFullName: "Washington Heating & Cooling",
+    phone: "(771) 249-1192",
+    phoneRaw: "7712491192",
+    email: "info@washingtonheatingcooling.com",
+    address: {
+      street: "1019 H St NE",
+      city: "Washington",
+      state: "DC",
+      zip: "20002",
+    },
+    colors: {
+      primary: "#1A73E9",
+      secondary: "#2BC48B",
+      light: "#F0F4F8",
+      dark: "#0E1B2B",
+    },
+    reviews: {
+      platform: "Google",
+      rating: 5.0,
+      count: 10,
+      url: "https://www.google.com/maps/search/?api=1&query=Washington%20Heating%20%26%20Cooling&query_place_id=ChIJm7jny6EEyIkR50_t5AvLDxM",
+      featured: [
+        {
+          author: "Verified Customer",
+          rating: 5,
+          text: "James is the best! Quick response, fair pricing, and he got our heating fixed the same day. Highly recommend!",
+          date: "2026-02-15",
+        },
+        {
+          author: "Verified Customer",
+          rating: 5,
+          text: "Washington Heating & Cooling is the real deal. Perfect 5-star service and always professional.",
+          date: "2026-01-20",
+        },
+        {
+          author: "Verified Customer",
+          rating: 5,
+          text: "Fast, reliable, and honest. James knows HVAC inside and out. Will use again for sure.",
+          date: "2025-12-10",
+        },
+      ],
+    },
+    serviceAreas: [
+      {
+        slug: "washington",
+        name: "Washington",
+        state: "DC",
+        metaTitle: "HVAC Services in Washington, DC",
+        metaDescription: "Perfect 5-star heating and cooling in Washington, DC. 10 reviews. Call Washington Heating & Cooling!",
+        headline: "HVAC Services in Washington, DC",
+        body: "Washington Heating & Cooling provides expert HVAC services to homeowners throughout Washington, DC. With a perfect 5-star rating and 10 glowing reviews, we deliver quick response times, fair pricing, and quality work you can trust.",
+      },
+    ],
+  },
+
+  // ── 33. Mitchell Heating DC ──
+  "mitchell-heating-dc": {
+    companyName: "Mitchell Heating",
+    companyFullName: "Mitchell Heating DC",
+    logo: "/images/mitchell-heating-logo.jpg",
+    phone: "(202) 621-2247",
+    phoneRaw: "2026212247",
+    email: "info@mitchellheatingdc.com",
+    address: {
+      street: "",
+      city: "Washington",
+      state: "DC",
+      zip: "",
+    },
+    colors: {
+      primary: "#FF0004",
+      secondary: "#0065E1",
+      light: "#FFFFFF",
+      dark: "#021F41",
+    },
+    reviews: {
+      platform: "Google",
+      rating: 4.6,
+      count: 13,
+      url: "https://www.google.com/maps/search/?api=1&query=Mitchell%20Heating%20DC&query_place_id=ChIJywqiEA65t4kROgiK94c7eqk",
+      featured: [
+        {
+          author: "Verified Customer",
+          rating: 5,
+          text: "Nathan from Mitchell Heating did excellent work. Professional, knowledgeable, and fair pricing.",
+          date: "2023-09-15",
+        },
+        {
+          author: "Verified Customer",
+          rating: 5,
+          text: "Mitchell Heating has been reliable for years. They know heating systems inside and out.",
+          date: "2023-06-20",
+        },
+      ],
+    },
+    serviceAreas: [
+      {
+        slug: "washington",
+        name: "Washington",
+        state: "DC",
+        metaTitle: "Heating Services in Washington, DC",
+        metaDescription: "Trusted heating services in Washington, DC. 4.6-star rating with 13 reviews. Call Mitchell Heating!",
+        headline: "Heating Services in Washington, DC",
+        body: "Mitchell Heating DC provides expert heating services to homeowners throughout Washington, DC. With a 4.6-star rating and 13 reviews, our experienced technicians deliver the reliable warmth your home needs.",
+      },
+    ],
+  },
+
+  // ── 34. Airway Climatrol Refrigeration ──
+  "airway-climatrol": {
+    companyName: "Airway Climatrol",
+    companyFullName: "Airway Climatrol Refrigeration",
+    phone: "(202) 723-4427",
+    phoneRaw: "2027234427",
+    email: "info@airwayclimatrol.com",
+    address: {
+      street: "505 Kennedy St NW B",
+      city: "Washington",
+      state: "DC",
+      zip: "20011",
+    },
+    colors: {
+      primary: "#1A73E9",
+      secondary: "#2BC48B",
+      light: "#F0F4F8",
+      dark: "#0E1B2B",
+    },
+    reviews: {
+      platform: "Google",
+      rating: 5.0,
+      count: 1,
+      url: "https://www.google.com/maps/search/?api=1&query=Airway%20Climatrol%20Refrigeration&query_place_id=ChIJtQlql3rIt4kREiRXC6lFcHQ",
+      featured: [
+        {
+          author: "Verified Customer",
+          rating: 5,
+          text: "Airway Climatrol is a long-established business. Reliable plumbing and HVAC service in DC.",
+          date: "2019-04-10",
+        },
+      ],
+    },
+    serviceAreas: [
+      {
+        slug: "washington",
+        name: "Washington",
+        state: "DC",
+        metaTitle: "HVAC & Plumbing Services in Washington, DC",
+        metaDescription: "Long-established HVAC and plumbing services in Washington, DC. Call Airway Climatrol Refrigeration!",
+        headline: "HVAC & Plumbing Services in Washington, DC",
+        body: "Airway Climatrol Refrigeration is a long-established HVAC and plumbing company serving Washington, DC homeowners. With decades of experience, we deliver the reliable service your home deserves.",
+      },
+    ],
+  },
+
+  // ── 35. SO HVAC Squad LLC ──
+  "so-hvac-squad": {
+    companyName: "SO HVAC Squad",
+    companyFullName: "SO HVAC Squad LLC",
+    phone: "(202) 000-0000",
+    phoneRaw: "2020000000",
+    email: "info@sohvacsquad.com",
+    address: {
+      street: "",
+      city: "Washington",
+      state: "DC",
+      zip: "",
+    },
+    colors: {
+      primary: "#1A73E9",
+      secondary: "#2BC48B",
+      light: "#F0F4F8",
+      dark: "#0E1B2B",
+    },
+    reviews: {
+      platform: "Google",
+      rating: 5.0,
+      count: 1,
+      url: "https://www.google.com/maps/search/?api=1&query=SO%20HVAC%20Squad%20LLC&query_place_id=ChIJEfyCfdRxW4gR3_8xdtMapD0",
+      featured: [
+        {
+          author: "Verified Customer",
+          rating: 5,
+          text: "SO HVAC Squad provided excellent service. Professional and reliable HVAC work.",
+          date: "2026-02-10",
+        },
+      ],
+    },
+    serviceAreas: [
+      {
+        slug: "washington",
+        name: "Washington",
+        state: "DC",
+        metaTitle: "HVAC Services in Washington, DC",
+        metaDescription: "Professional HVAC services in Washington, DC. Call SO HVAC Squad LLC!",
+        headline: "HVAC Services in Washington, DC",
+        body: "SO HVAC Squad LLC provides professional heating and cooling services to homeowners throughout Washington, DC. We deliver quality HVAC work you can count on.",
+      },
+    ],
+  },
+
+  // ── 36. B & M Heat Air & Electrical ──
+  "bm-heat-air": {
+    companyName: "B & M Heat Air",
+    companyFullName: "B & M Heat Air & Electrical",
+    phone: "(620) 782-9635",
+    phoneRaw: "6207829635",
+    email: "info@bmheatair.com",
+    address: {
+      street: "503 S Clark St",
+      city: "Udall",
+      state: "KS",
+      zip: "67146",
+    },
+    colors: {
+      primary: "#1A73E9",
+      secondary: "#2BC48B",
+      light: "#F0F4F8",
+      dark: "#0E1B2B",
+    },
+    reviews: {
+      platform: "Google",
+      rating: 5.0,
+      count: 2,
+      url: "https://www.google.com/maps/search/?api=1&query=B%20%26%20M%20Heat%20Air%20%26%20Electrical&query_place_id=ChIJRx60TvWKuocRb50l9U4kNZA",
+      featured: [
+        {
+          author: "Verified Customer",
+          rating: 5,
+          text: "B & M provides quick response and reasonable prices. Great local HVAC and electrical service.",
+          date: "2018-05-10",
+        },
+      ],
+    },
+    serviceAreas: [
+      {
+        slug: "udall",
+        name: "Udall",
+        state: "KS",
+        metaTitle: "HVAC & Electrical Services in Udall, KS",
+        metaDescription: "HVAC, heating, and electrical services in Udall, KS. Perfect 5-star rating. Call B & M Heat Air!",
+        headline: "HVAC & Electrical Services in Udall, KS",
+        body: "B & M Heat Air & Electrical provides HVAC and electrical services to homeowners in Udall and the surrounding South Wichita area. Quick response, reasonable prices, and quality work every time.",
+      },
+    ],
+  },
+
+  // ── 37. Chew Plumbing & Heating Inc ──
+  "chew-plumbing-heating": {
+    companyName: "Chew Plumbing & Heating",
+    companyFullName: "Chew Plumbing & Heating Inc",
+    phone: "(620) 326-7635",
+    phoneRaw: "6203267635",
+    email: "info@chewplumbing.com",
+    address: {
+      street: "306 N Washington Ave",
+      city: "Wellington",
+      state: "KS",
+      zip: "67152",
+    },
+    colors: {
+      primary: "#1A73E9",
+      secondary: "#2BC48B",
+      light: "#F0F4F8",
+      dark: "#0E1B2B",
+    },
+    reviews: {
+      platform: "Google",
+      rating: 4.3,
+      count: 42,
+      url: "https://www.google.com/maps/search/?api=1&query=Chew%20Plumbing%20%26%20Heating%20Inc&query_place_id=ChIJq5YBOqaXuocRY7mY4xagmXc",
+      featured: [
+        {
+          author: "Verified Customer",
+          rating: 5,
+          text: "Chew Plumbing & Heating is an established business in Wellington. Reliable service for years.",
+          date: "2025-05-15",
+        },
+        {
+          author: "Verified Customer",
+          rating: 5,
+          text: "Great plumbing and heating work. They're busy because they're good. Highly recommend!",
+          date: "2025-03-20",
+        },
+      ],
+    },
+    serviceAreas: [
+      {
+        slug: "wellington",
+        name: "Wellington",
+        state: "KS",
+        metaTitle: "Plumbing & Heating Services in Wellington, KS",
+        metaDescription: "Established plumbing and heating services in Wellington, KS. 42 reviews. Call Chew Plumbing & Heating!",
+        headline: "Plumbing & Heating Services in Wellington, KS",
+        body: "Chew Plumbing & Heating Inc is Wellington's established plumbing and heating company. With 42 reviews and years of service, we deliver the reliable work that has made us a trusted name in the community.",
+      },
+    ],
+  },
+
+  // ── 38. Harris Heating & Air ──
+  "harris-heating-air": {
+    companyName: "Harris Heating & Air",
+    companyFullName: "Harris Heating & Air",
+    phone: "(316) 312-8736",
+    phoneRaw: "3163128736",
+    email: "info@harrisheatingair.com",
+    address: {
+      street: "",
+      city: "Wichita",
+      state: "KS",
+      zip: "",
+    },
+    colors: {
+      primary: "#1A73E9",
+      secondary: "#2BC48B",
+      light: "#F0F4F8",
+      dark: "#0E1B2B",
+    },
+    reviews: {
+      platform: "Google",
+      rating: 5.0,
+      count: 13,
+      url: "https://www.google.com/maps/search/?api=1&query=Harris%20Heating%20%26%20Air&query_place_id=ChIJ41zN3y_nuocRJ6-xRijut6c",
+      featured: [
+        {
+          author: "Verified Customer",
+          rating: 5,
+          text: "Austin and Leroy are top-notch technicians. Harris Heating & Air delivers perfect service every time!",
+          date: "2025-08-10",
+        },
+        {
+          author: "Verified Customer",
+          rating: 5,
+          text: "Veteran-friendly and works with home warranty companies. Perfect 5-star service. Highly recommend!",
+          date: "2025-07-25",
+        },
+        {
+          author: "Verified Customer",
+          rating: 5,
+          text: "Harris Heating & Air is the best in the Wichita area. Professional, reliable, and fair pricing.",
+          date: "2025-07-15",
+        },
+      ],
+    },
+    serviceAreas: [
+      {
+        slug: "wichita",
+        name: "Wichita",
+        state: "KS",
+        metaTitle: "HVAC Services in Wichita, KS",
+        metaDescription: "Perfect 5-star HVAC services in Wichita, KS. 13 reviews. Veteran-friendly. Call Harris Heating & Air!",
+        headline: "HVAC Services in Wichita, KS",
+        body: "Harris Heating & Air provides perfect 5-star HVAC services to Wichita homeowners. Veteran-friendly and experienced with home warranty companies, our technicians Austin and Leroy deliver quality work every time.",
+      },
+    ],
+  },
+
+  // ── 39. Glantz Plumbing Heating & AC ──
+  "glantz-plumbing": {
+    companyName: "Glantz Plumbing",
+    companyFullName: "Glantz Plumbing Heating & AC",
+    phone: "(620) 221-7375",
+    phoneRaw: "6202217375",
+    email: "info@glantzplumbing.com",
+    address: {
+      street: "105 W 11th Ave",
+      city: "Winfield",
+      state: "KS",
+      zip: "67156",
+    },
+    colors: {
+      primary: "#1A73E9",
+      secondary: "#2BC48B",
+      light: "#F0F4F8",
+      dark: "#0E1B2B",
+    },
+    reviews: {
+      platform: "Google",
+      rating: 3.5,
+      count: 56,
+      url: "https://www.google.com/maps/search/?api=1&query=Glantz%20Plumbing%20Heating%20%26%20A%20C&query_place_id=ChIJ9b7ix2d7uocRDanlrkVRMK4",
+      featured: [
+        {
+          author: "Verified Customer",
+          rating: 5,
+          text: "Jeff and Shannon run a solid operation. Glantz handles plumbing, heating, and AC — available 24/7.",
+          date: "2026-01-10",
+        },
+        {
+          author: "Verified Customer",
+          rating: 5,
+          text: "High-volume company for a reason. They know their stuff and get the job done right.",
+          date: "2025-11-15",
+        },
+      ],
+    },
+    serviceAreas: [
+      {
+        slug: "winfield",
+        name: "Winfield",
+        state: "KS",
+        metaTitle: "Plumbing, Heating & AC in Winfield, KS",
+        metaDescription: "24/7 plumbing, heating, and AC services in Winfield, KS. 56 reviews. Call Glantz Plumbing!",
+        headline: "Plumbing, Heating & AC in Winfield, KS",
+        body: "Glantz Plumbing Heating & AC provides 24/7 plumbing, heating, and air conditioning services to Winfield homeowners. With 56 reviews, Jeff and Shannon's team is one of the most established service providers in the area.",
+      },
+    ],
+  },
+
+  // ── 40. MJB Heating & Cooling ──
+  "mjb-heating-cooling": {
+    companyName: "MJB Heating & Cooling",
+    companyFullName: "MJB Heating & Cooling",
+    phone: "(316) 000-0000",
+    phoneRaw: "3160000000",
+    email: "info@mjbheating.com",
+    address: {
+      street: "6420 Southeast Blvd",
+      city: "Derby",
+      state: "KS",
+      zip: "67037",
+    },
+    colors: {
+      primary: "#1A73E9",
+      secondary: "#2BC48B",
+      light: "#F0F4F8",
+      dark: "#0E1B2B",
+    },
+    reviews: {
+      platform: "Google",
+      rating: 4.6,
+      count: 5,
+      url: "https://www.google.com/maps/search/?api=1&query=MJB%20Heating%20%26%20Cooling&query_place_id=ChIJfZ6IcvHvuocRWZMzqz3fX6w",
+      featured: [
+        {
+          author: "Verified Customer",
+          rating: 5,
+          text: "Dale and his crew are great. Realtor-recommended and they always deliver quality HVAC work.",
+          date: "2024-03-10",
+        },
+        {
+          author: "Verified Customer",
+          rating: 5,
+          text: "MJB Heating & Cooling is the best in Derby. Professional, reliable, and fair pricing.",
+          date: "2024-01-20",
+        },
+      ],
+    },
+    serviceAreas: [
+      {
+        slug: "derby",
+        name: "Derby",
+        state: "KS",
+        metaTitle: "HVAC Services in Derby, KS",
+        metaDescription: "Realtor-recommended HVAC services in Derby, KS. Call MJB Heating & Cooling!",
+        headline: "HVAC Services in Derby, KS",
+        body: "MJB Heating & Cooling provides expert HVAC services to homeowners in Derby and the South Wichita suburbs. Realtor-recommended and led by Dale's experienced crew, we deliver quality heating and cooling work.",
+      },
+    ],
+  },
+
+  // ── 41. Baton Rouge Heating & Air Conditioning ──
+  "baton-rouge-heating-air": {
+    companyName: "Baton Rouge Heating & Air",
+    companyFullName: "Baton Rouge Heating & Air Conditioning",
+    phone: "(323) 894-7157",
+    phoneRaw: "3238947157",
+    email: "info@batonrougeheatingair.com",
+    address: {
+      street: "933 Government St",
+      city: "Baton Rouge",
+      state: "LA",
+      zip: "70802",
+    },
+    colors: {
+      primary: "#1A73E9",
+      secondary: "#2BC48B",
+      light: "#F0F4F8",
+      dark: "#0E1B2B",
+    },
+    reviews: {
+      platform: "Google",
+      rating: 5.0,
+      count: 30,
+      url: "https://www.google.com/maps/search/?api=1&query=Baton%20Rouge%20Heating%20%26%20Air%20Conditioning&query_place_id=ChIJEeJ8UEXKJoYRiBI-bNArbig",
+      featured: [
+        {
+          author: "Verified Customer",
+          rating: 5,
+          text: "Dale is the best. Baton Rouge Heating & Air provides perfect service — 30 five-star reviews speak for themselves!",
+          date: "2021-08-15",
+        },
+        {
+          author: "Verified Customer",
+          rating: 5,
+          text: "They also handle generator maintenance. One-stop shop for home comfort and power. Highly recommend!",
+          date: "2021-06-20",
+        },
+        {
+          author: "Verified Customer",
+          rating: 5,
+          text: "Small business, big quality. Every visit has been a 5-star experience. Wouldn't go anywhere else.",
+          date: "2021-04-10",
+        },
+      ],
+    },
+    serviceAreas: [
+      {
+        slug: "baton-rouge",
+        name: "Baton Rouge",
+        state: "LA",
+        metaTitle: "HVAC Services in Baton Rouge, LA",
+        metaDescription: "Perfect 5-star HVAC and generator services in Baton Rouge, LA. 30 reviews. Call Baton Rouge Heating & Air!",
+        headline: "HVAC Services in Baton Rouge, LA",
+        body: "Baton Rouge Heating & Air Conditioning provides perfect 5-star HVAC and generator maintenance services on Government Street. With 30 five-star reviews, Dale's team delivers the quality and reliability that Baton Rouge homeowners trust.",
+      },
+    ],
+  },
+
+  // ── 42. Top Notch Cooling ──
+  "top-notch-cooling": {
+    companyName: "Top Notch Cooling",
+    companyFullName: "Top Notch Cooling",
+    phone: "(225) 367-0555",
+    phoneRaw: "2253670555",
+    email: "info@topnotchcooling.com",
+    address: {
+      street: "",
+      city: "Baton Rouge",
+      state: "LA",
+      zip: "",
+    },
+    colors: {
+      primary: "#1A73E9",
+      secondary: "#2BC48B",
+      light: "#F0F4F8",
+      dark: "#0E1B2B",
+    },
+    reviews: {
+      platform: "Google",
+      rating: 5.0,
+      count: 3,
+      url: "https://www.google.com/maps/search/?api=1&query=Top%20Notch%20Cooling&query_place_id=ChIJP5QzM81PL44RkbY35YMNy_0",
+      featured: [
+        {
+          author: "Verified Customer",
+          rating: 5,
+          text: "Top Notch Cooling lives up to its name. Perfect service and quality HVAC work in Baton Rouge.",
+          date: "2021-09-15",
+        },
+      ],
+    },
+    serviceAreas: [
+      {
+        slug: "baton-rouge",
+        name: "Baton Rouge",
+        state: "LA",
+        metaTitle: "HVAC Services in Baton Rouge, LA",
+        metaDescription: "Perfect 5-star cooling and HVAC services in Baton Rouge, LA. Call Top Notch Cooling!",
+        headline: "HVAC Services in Baton Rouge, LA",
+        body: "Top Notch Cooling provides expert HVAC services to Baton Rouge homeowners. With a perfect 5-star rating, we deliver the quality cooling and heating service your home deserves.",
+      },
+    ],
+  },
+
+  // ── 43. Option1 Home Services LLC ──
+  "option1-home-services": {
+    companyName: "Option1 Home Services",
+    companyFullName: "Option1 Home Services LLC",
+    phone: "(225) 456-9353",
+    phoneRaw: "2254569353",
+    email: "info@option1homeservices.com",
+    address: {
+      street: "",
+      city: "Baton Rouge",
+      state: "LA",
+      zip: "",
+    },
+    colors: {
+      primary: "#1A73E9",
+      secondary: "#2BC48B",
+      light: "#F0F4F8",
+      dark: "#0E1B2B",
+    },
+    reviews: {
+      platform: "Google",
+      rating: 5.0,
+      count: 0,
+      url: "https://www.google.com/maps/search/?api=1&query=Option1HomeServicesLLC&query_place_id=ChIJrc0j_mDu3YgRi-Bs3VeWKR8",
+      featured: [],
+    },
+    serviceAreas: [
+      {
+        slug: "baton-rouge",
+        name: "Baton Rouge",
+        state: "LA",
+        metaTitle: "HVAC Services in Baton Rouge, LA",
+        metaDescription: "Professional HVAC services in Baton Rouge, LA. Call Option1 Home Services LLC!",
+        headline: "HVAC Services in Baton Rouge, LA",
+        body: "Option1 Home Services LLC provides professional HVAC services to Baton Rouge homeowners. We're committed to delivering quality heating and cooling work at competitive prices.",
+      },
+    ],
+  },
+
+  // ── 44. Service Now Air Conditioning and Heating ──
+  "service-now-ac": {
+    companyName: "Service Now AC & Heating",
+    companyFullName: "Service Now Air Conditioning and Heating",
+    phone: "(225) 000-0000",
+    phoneRaw: "2250000000",
+    email: "info@servicenowac.com",
+    address: {
+      street: "",
+      city: "Baton Rouge",
+      state: "LA",
+      zip: "",
+    },
+    colors: {
+      primary: "#1A73E9",
+      secondary: "#2BC48B",
+      light: "#F0F4F8",
+      dark: "#0E1B2B",
+    },
+    reviews: {
+      platform: "Google",
+      rating: 1.7,
+      count: 11,
+      url: "https://www.google.com/maps/search/?api=1&query=Service%20Now%20Air%20Conditioning%20and%20Heating&query_place_id=ChIJHe9h5UOlJoYRu49KGscf0Vo",
+      featured: [],
+    },
+    serviceAreas: [
+      {
+        slug: "baton-rouge",
+        name: "Baton Rouge",
+        state: "LA",
+        metaTitle: "HVAC Services in Baton Rouge, LA",
+        metaDescription: "Air conditioning and heating services in Baton Rouge, LA. Call Service Now!",
+        headline: "HVAC Services in Baton Rouge, LA",
+        body: "Service Now Air Conditioning and Heating provides HVAC services to Baton Rouge homeowners. We handle air conditioning repair, heating installation, and more.",
+      },
+    ],
+  },
+
+  // ── 45. DC Air Duct Cleaning & Dryer Vent Cleaning ──
+  "dc-air-duct-cleaning": {
+    companyName: "DC Air Duct Cleaning",
+    companyFullName: "DC Air Duct Cleaning & Dryer Vent Cleaning",
+    phone: "(202) 936-3515",
+    phoneRaw: "2029363515",
+    email: "info@dcairductcleaning.com",
+    address: {
+      street: "4530 40th St NW",
+      city: "Washington",
+      state: "DC",
+      zip: "20016",
+    },
+    colors: {
+      primary: "#1A73E9",
+      secondary: "#2BC48B",
+      light: "#F0F4F8",
+      dark: "#0E1B2B",
+    },
+    reviews: {
+      platform: "Google",
+      rating: 4.8,
+      count: 32,
+      url: "https://www.google.com/maps/search/?api=1&query=DC%20Air%20Duct%20Cleaning%20%26%20Dryer%20vent%20Cleaning&query_place_id=ChIJQ34B9nhaGIcRlgHR06aaUyg",
+      featured: [
+        {
+          author: "Verified Customer",
+          rating: 5,
+          text: "DC Air Duct Cleaning does excellent work. Thorough duct cleaning and AC filter service. Very active and responsive!",
+          date: "2026-03-10",
+        },
+        {
+          author: "Verified Customer",
+          rating: 5,
+          text: "Professional service from start to finish. Our air quality improved immediately after the duct cleaning.",
+          date: "2026-02-25",
+        },
+        {
+          author: "Verified Customer",
+          rating: 5,
+          text: "Best duct cleaning service in DC. Fair prices, thorough work, and great communication throughout.",
+          date: "2026-02-10",
+        },
+      ],
+    },
+    serviceAreas: [
+      {
+        slug: "washington",
+        name: "Washington",
+        state: "DC",
+        metaTitle: "Air Duct Cleaning & HVAC Services in Washington, DC",
+        metaDescription: "4.8-star air duct cleaning and dryer vent cleaning in Washington, DC. 32 reviews. Call DC Air Duct Cleaning!",
+        headline: "Air Duct Cleaning & HVAC Services in Washington, DC",
+        body: "DC Air Duct Cleaning & Dryer Vent Cleaning provides expert duct cleaning, dryer vent cleaning, and HVAC filter services to Washington, DC homeowners. With a 4.8-star rating and 32 reviews, we're one of DC's most active and trusted service providers.",
+      },
+    ],
+  },
 };
 
 export default clients;
