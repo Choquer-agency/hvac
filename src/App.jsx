@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route, Navigate, useParams, Outlet } from "react-router-dom";
+import { useMemo } from "react";
+import { BrowserRouter, Routes, Route, useParams, Outlet } from "react-router-dom";
 import { ConfigProvider } from "./context/ConfigProvider";
 import { resolveConfig } from "./config/resolve-config";
 import BaseLayout from "./layouts/BaseLayout";
@@ -15,7 +16,24 @@ import NotFoundPage from "./pages/NotFoundPage";
 
 function ClientShell() {
   const { clientSlug } = useParams();
-  const config = resolveConfig(clientSlug);
+
+  const { config, error } = useMemo(() => {
+    try {
+      return { config: resolveConfig(clientSlug), error: null };
+    } catch (err) {
+      console.error("Config resolution error for slug:", clientSlug, err);
+      return { config: null, error: err.message };
+    }
+  }, [clientSlug]);
+
+  if (error) {
+    return (
+      <div style={{ padding: 40, textAlign: "center", fontFamily: "sans-serif" }}>
+        <p>Something went wrong loading this demo.</p>
+        <p style={{ color: "red", fontSize: 12 }}>{error}</p>
+      </div>
+    );
+  }
 
   if (!config) {
     return <LandingPage />;
