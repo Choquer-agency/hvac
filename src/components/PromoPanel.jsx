@@ -16,6 +16,8 @@ export default function PromoPanel() {
   const [searchParams, setSearchParams] = useSearchParams();
   const [status, setStatus] = useState("minimized");
 
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+
   useEffect(() => {
     if (searchParams.get("payment") === "success") {
       localStorage.removeItem("promo-minimized");
@@ -27,8 +29,13 @@ export default function PromoPanel() {
 
     if (localStorage.getItem("promo-minimized")) return;
 
-    const timer = setTimeout(() => setStatus("open"), 800);
-    return () => clearTimeout(timer);
+    if (isMobile) {
+      // On mobile: stay minimized but flash the tab to draw attention
+      setStatus("minimized");
+    } else {
+      const timer = setTimeout(() => setStatus("open"), 800);
+      return () => clearTimeout(timer);
+    }
   }, []);
 
   const minimize = () => {
@@ -37,6 +44,16 @@ export default function PromoPanel() {
   };
 
   const isOpen = status === "open" || status === "success";
+  const [flash, setFlash] = useState(false);
+
+  // Flash the minimized tab on mobile to draw attention
+  useEffect(() => {
+    if (!isMobile) return;
+    if (isOpen || localStorage.getItem("promo-minimized")) return;
+    const timer = setTimeout(() => setFlash(true), 1200);
+    const stop = setTimeout(() => setFlash(false), 2800);
+    return () => { clearTimeout(timer); clearTimeout(stop); };
+  }, [isMobile, isOpen]);
 
   return (
     <div className="fixed top-0 right-0 h-full z-[60] pointer-events-none">
@@ -45,7 +62,7 @@ export default function PromoPanel() {
         onClick={() => setStatus("open")}
         className={`pointer-events-auto absolute right-0 top-1/2 -translate-y-1/2 flex flex-col items-center gap-3 text-white px-3.5 py-6 rounded-l-lg shadow-lg cursor-pointer transition-all duration-300 ${
           isOpen ? "opacity-0 pointer-events-none translate-x-full" : "opacity-100 translate-x-0"
-        }`}
+        } ${flash ? "animate-[pulse-tab_0.6s_ease-in-out_3]" : ""}`}
         style={{ background: "#FF9500" }}
         aria-label="Open special offer"
       >
