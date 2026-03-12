@@ -18,7 +18,7 @@ function ClientShell() {
   const config = resolveConfig(clientSlug);
 
   if (!config) {
-    return <Navigate to="/" replace />;
+    return <LandingPage />;
   }
 
   return (
@@ -33,7 +33,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         {/* Root landing page */}
-        <Route index element={<LandingPage />} />
+        <Route path="/" element={<LandingPage />} />
 
         {/* Client-scoped routes */}
         <Route path="/:clientSlug" element={<ClientShell />}>
@@ -49,6 +49,9 @@ export default function App() {
             <Route path="*" element={<NotFoundPage />} />
           </Route>
         </Route>
+
+        {/* Catch-all fallback */}
+        <Route path="*" element={<LandingPage />} />
       </Routes>
     </BrowserRouter>
   );
