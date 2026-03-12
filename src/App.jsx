@@ -1,5 +1,10 @@
 import { useMemo } from "react";
-import { BrowserRouter, Routes, Route, useParams, Outlet } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  useParams,
+  Outlet,
+} from "react-router-dom";
 import { ConfigProvider } from "./context/ConfigProvider";
 import { resolveConfig } from "./config/resolve-config";
 import BaseLayout from "./layouts/BaseLayout";
@@ -46,31 +51,37 @@ function ClientShell() {
   );
 }
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <LandingPage />,
+  },
+  {
+    path: "/:clientSlug",
+    element: <ClientShell />,
+    children: [
+      {
+        element: <BaseLayout />,
+        children: [
+          { index: true, element: <HomePage /> },
+          { path: "about", element: <AboutPage /> },
+          { path: "services", element: <ServicesPage /> },
+          { path: "services/:slug", element: <ServiceDetailPage /> },
+          { path: "service-areas", element: <ServiceAreasPage /> },
+          { path: "service-areas/:slug", element: <ServiceAreaDetailPage /> },
+          { path: "reviews", element: <ReviewsPage /> },
+          { path: "contact", element: <ContactPage /> },
+          { path: "*", element: <NotFoundPage /> },
+        ],
+      },
+    ],
+  },
+  {
+    path: "*",
+    element: <LandingPage />,
+  },
+]);
+
 export default function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        {/* Root landing page */}
-        <Route path="/" element={<LandingPage />} />
-
-        {/* Client-scoped routes */}
-        <Route path="/:clientSlug" element={<ClientShell />}>
-          <Route element={<BaseLayout />}>
-            <Route index element={<HomePage />} />
-            <Route path="about" element={<AboutPage />} />
-            <Route path="services" element={<ServicesPage />} />
-            <Route path="services/:slug" element={<ServiceDetailPage />} />
-            <Route path="service-areas" element={<ServiceAreasPage />} />
-            <Route path="service-areas/:slug" element={<ServiceAreaDetailPage />} />
-            <Route path="reviews" element={<ReviewsPage />} />
-            <Route path="contact" element={<ContactPage />} />
-            <Route path="*" element={<NotFoundPage />} />
-          </Route>
-        </Route>
-
-        {/* Catch-all fallback */}
-        <Route path="*" element={<LandingPage />} />
-      </Routes>
-    </BrowserRouter>
-  );
+  return <RouterProvider router={router} />;
 }
