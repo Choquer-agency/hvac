@@ -121,6 +121,7 @@ const clients = {
   "champion-hvac-atlanta": {
     companyName: "Champion HVAC",
     companyFullName: "Champion HVAC Atlanta Experts",
+    logo: "/images/champion-hvac-logo.png",
     phone: "(678) 270-4418",
     phoneRaw: "6782704418",
     email: "info@championhvacatl.com",
@@ -872,6 +873,7 @@ const clients = {
   "champs-mechanical": {
     companyName: "Champs Mechanical",
     companyFullName: "Champs Mechanical Services",
+    logo: "/images/champs-mechanical-logo.png",
     phone: "(404) 000-0000",
     phoneRaw: "4040000000",
     email: "info@champsmechanical.com",
@@ -1173,6 +1175,7 @@ const clients = {
   "fix-atlanta": {
     companyName: "Fix Atlanta",
     companyFullName: "Fix Atlanta Commercial Refrigeration",
+    logo: "/images/fix-atlanta-logo.png",
     phone: "(404) 860-1185",
     phoneRaw: "4048601185",
     email: "info@fixatlanta.com",
