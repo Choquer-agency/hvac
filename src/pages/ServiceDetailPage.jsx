@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { useConfig } from "../hooks/useConfig";
+import { useClientPath } from "../hooks/useClientPath";
 import SEOHead from "../components/SEOHead";
 import Breadcrumbs from "../components/Breadcrumbs";
 import PageHero from "../components/PageHero";
@@ -44,13 +45,14 @@ function ContentRenderer({ content }) {
 export default function ServiceDetailPage() {
   const { slug } = useParams();
   const config = useConfig();
+  const clientPath = useClientPath();
   const service = config.services.find((s) => s.slug === slug);
 
   if (!service) {
     return (
       <div className="max-w-7xl mx-auto px-4 py-20 text-center">
         <h1 className="text-3xl font-bold mb-4">Service Not Found</h1>
-        <Link to="/services" className="text-brand hover:underline">
+        <Link to={clientPath("/services")} className="text-brand hover:underline">
           View all services
         </Link>
       </div>
@@ -137,7 +139,7 @@ export default function ServiceDetailPage() {
                       {related.map((s) => (
                         <Link
                           key={s.slug}
-                          to={`/services/${s.slug}`}
+                          to={clientPath(`/services/${s.slug}`)}
                           className="block p-4 bg-surface-light rounded-lg hover:bg-brand/5 transition-colors group"
                         >
                           <span className="font-semibold text-surface-dark group-hover:text-brand transition-colors">

@@ -5,22 +5,10 @@ export default function ContactForm() {
   const config = useConfig();
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    const form = e.target;
-    const data = new FormData(form);
-
-    try {
-      await fetch(config.contact.formAction, {
-        method: "POST",
-        body: data,
-        headers: { Accept: "application/json" },
-      });
-      setSubmitted(true);
-      form.reset();
-    } catch {
-      alert("Something went wrong. Please call us directly.");
-    }
+    e.target.reset();
+    setSubmitted(true);
   };
 
   if (submitted) {

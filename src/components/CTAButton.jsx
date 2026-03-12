@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import { useClientPath } from "../hooks/useClientPath";
 
 export default function CTAButton({ label, href, variant = "primary", className = "" }) {
+  const clientPath = useClientPath();
   const base = "inline-block font-semibold rounded-lg transition-all duration-200 text-center";
   const variants = {
     primary: "bg-accent text-white px-8 py-3 text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl",
@@ -13,7 +15,9 @@ export default function CTAButton({ label, href, variant = "primary", className 
 
   const classes = `${base} ${variants[variant] || variants.primary} ${className}`;
 
-  if (href?.startsWith("tel:") || href?.startsWith("http") || href?.startsWith("mailto:")) {
+  const isExternal = href?.startsWith("tel:") || href?.startsWith("http") || href?.startsWith("mailto:");
+
+  if (isExternal) {
     return (
       <a href={href} className={classes}>
         {label}
@@ -22,7 +26,7 @@ export default function CTAButton({ label, href, variant = "primary", className 
   }
 
   return (
-    <Link to={href} className={classes}>
+    <Link to={clientPath(href)} className={classes}>
       {label}
     </Link>
   );

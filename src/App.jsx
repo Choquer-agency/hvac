@@ -1,6 +1,8 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, useParams, Outlet } from "react-router-dom";
 import { ConfigProvider } from "./context/ConfigProvider";
+import { resolveConfig } from "./config/resolve-config";
 import BaseLayout from "./layouts/BaseLayout";
+import LandingPage from "./pages/LandingPage";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ServicesPage from "./pages/ServicesPage";
@@ -11,11 +13,30 @@ import ReviewsPage from "./pages/ReviewsPage";
 import ContactPage from "./pages/ContactPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
+function ClientShell() {
+  const { clientSlug } = useParams();
+  const config = resolveConfig(clientSlug);
+
+  if (!config) {
+    return <Navigate to="/" replace />;
+  }
+
+  return (
+    <ConfigProvider config={config}>
+      <Outlet />
+    </ConfigProvider>
+  );
+}
+
 export default function App() {
   return (
-    <ConfigProvider>
-      <BrowserRouter>
-        <Routes>
+    <BrowserRouter>
+      <Routes>
+        {/* Root landing page */}
+        <Route index element={<LandingPage />} />
+
+        {/* Client-scoped routes */}
+        <Route path="/:clientSlug" element={<ClientShell />}>
           <Route element={<BaseLayout />}>
             <Route index element={<HomePage />} />
             <Route path="about" element={<AboutPage />} />
@@ -27,8 +48,8 @@ export default function App() {
             <Route path="contact" element={<ContactPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Route>
-        </Routes>
-      </BrowserRouter>
-    </ConfigProvider>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }

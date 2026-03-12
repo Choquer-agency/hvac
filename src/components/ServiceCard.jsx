@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useClientPath } from "../hooks/useClientPath";
 
 const serviceIcons = {
   "ac-repair": (
@@ -36,9 +37,11 @@ const serviceIcons = {
 };
 
 export default function ServiceCard({ service }) {
+  const clientPath = useClientPath();
+
   return (
     <Link
-      to={`/services/${service.slug}`}
+      to={clientPath(`/services/${service.slug}`)}
       className="group bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-brand/20 flex flex-col overflow-hidden hover:-translate-y-1"
     >
       {service.image && (

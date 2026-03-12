@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import { useConfig } from "../hooks/useConfig";
+import { useClientPath } from "../hooks/useClientPath";
 
 export default function Footer() {
   const config = useConfig();
+  const clientPath = useClientPath();
   const year = new Date().getFullYear();
 
   return (
@@ -11,7 +13,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Column 1: Company Info */}
           <div>
-            <Link to="/" className="flex items-center gap-2.5">
+            <Link to={clientPath("/")} className="flex items-center gap-2.5">
               <img src={config.logo} alt={config.companyName} className="h-8 w-auto brightness-0 invert" />
               <span className="text-xl font-bold text-white">{config.companyName}</span>
             </Link>
@@ -36,7 +38,7 @@ export default function Footer() {
               {config.nav.links.map((link) => (
                 <li key={link.label}>
                   <Link
-                    to={link.href}
+                    to={clientPath(link.href)}
                     className="text-sm text-gray-400 hover:text-white transition-colors"
                   >
                     {link.label}
@@ -53,7 +55,7 @@ export default function Footer() {
               {config.services.map((service) => (
                 <li key={service.slug}>
                   <Link
-                    to={`/services/${service.slug}`}
+                    to={clientPath(`/services/${service.slug}`)}
                     className="text-sm text-gray-400 hover:text-white transition-colors"
                   >
                     {service.name}
@@ -70,7 +72,7 @@ export default function Footer() {
               {config.serviceAreas.map((area) => (
                 <li key={area.slug}>
                   <Link
-                    to={`/service-areas/${area.slug}`}
+                    to={clientPath(`/service-areas/${area.slug}`)}
                     className="text-sm text-gray-400 hover:text-white transition-colors"
                   >
                     {area.name}, {area.state}

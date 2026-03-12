@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
+import { useClientPath } from "../hooks/useClientPath";
 import SEOHead from "../components/SEOHead";
 
 export default function NotFoundPage() {
+  const clientPath = useClientPath();
+
   return (
     <>
       <SEOHead title="Page Not Found" />
@@ -14,7 +17,7 @@ export default function NotFoundPage() {
           Sorry, the page you&apos;re looking for doesn&apos;t exist or has been moved.
         </p>
         <Link
-          to="/"
+          to={clientPath("/")}
           className="inline-block bg-accent text-white font-semibold px-8 py-3 rounded-lg hover:bg-accent-dark transition-colors"
         >
           Go Home

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useConfig } from "../hooks/useConfig";
+import { useClientPath } from "../hooks/useClientPath";
 import SEOHead from "../components/SEOHead";
 import Breadcrumbs from "../components/Breadcrumbs";
 import PageHero from "../components/PageHero";
@@ -7,6 +8,7 @@ import FinalCTA from "../components/FinalCTA";
 
 export default function ServiceAreasPage() {
   const config = useConfig();
+  const clientPath = useClientPath();
 
   return (
     <>
@@ -37,7 +39,7 @@ export default function ServiceAreasPage() {
               {config.serviceAreas.map((area) => (
                 <Link
                   key={area.slug}
-                  to={`/service-areas/${area.slug}`}
+                  to={clientPath(`/service-areas/${area.slug}`)}
                   className="group bg-white rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-lg hover:border-brand/20 transition-all"
                 >
                   <div className="flex items-center gap-3 mb-3">

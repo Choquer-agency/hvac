@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { useConfig } from "../hooks/useConfig";
+import { useClientPath } from "../hooks/useClientPath";
 import SEOHead from "../components/SEOHead";
 import Breadcrumbs from "../components/Breadcrumbs";
 import PageHero from "../components/PageHero";
@@ -9,13 +10,14 @@ import FinalCTA from "../components/FinalCTA";
 export default function ServiceAreaDetailPage() {
   const { slug } = useParams();
   const config = useConfig();
+  const clientPath = useClientPath();
   const area = config.serviceAreas.find((a) => a.slug === slug);
 
   if (!area) {
     return (
       <div className="max-w-7xl mx-auto px-4 py-20 text-center">
         <h1 className="text-3xl font-bold mb-4">Area Not Found</h1>
-        <Link to="/service-areas" className="text-brand hover:underline">
+        <Link to={clientPath("/service-areas")} className="text-brand hover:underline">
           View all service areas
         </Link>
       </div>

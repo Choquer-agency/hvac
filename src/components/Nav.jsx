@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useConfig } from "../hooks/useConfig";
+import { useClientPath } from "../hooks/useClientPath";
 import CTAButton from "./CTAButton";
 
 export default function Nav() {
   const config = useConfig();
+  const clientPath = useClientPath();
   const location = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -26,6 +28,12 @@ export default function Nav() {
     return () => { document.body.style.overflow = ""; };
   }, [mobileOpen]);
 
+  const isActive = (href) => {
+    const fullPath = clientPath(href);
+    if (href === "/") return location.pathname === fullPath;
+    return location.pathname.startsWith(fullPath);
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -35,7 +43,7 @@ export default function Nav() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2.5 shrink-0">
+          <Link to={clientPath("/")} className="flex items-center gap-2.5 shrink-0">
             <img src={config.logo} alt={config.companyName} className="h-8 lg:h-10 w-auto" />
             <span className="text-xl lg:text-2xl font-bold text-surface-dark">
               {config.companyName}
@@ -53,9 +61,9 @@ export default function Nav() {
                   onMouseLeave={() => setServicesOpen(false)}
                 >
                   <Link
-                    to={link.href}
+                    to={clientPath(link.href)}
                     className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                      location.pathname.startsWith(link.href)
+                      isActive(link.href)
                         ? "text-brand bg-brand/5"
                         : "text-gray-700 hover:text-brand hover:bg-gray-50"
                     }`}
@@ -70,7 +78,7 @@ export default function Nav() {
                       {config.services.map((service) => (
                         <Link
                           key={service.slug}
-                          to={`/services/${service.slug}`}
+                          to={clientPath(`/services/${service.slug}`)}
                           className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-brand/5 hover:text-brand transition-colors"
                         >
                           {service.name}
@@ -82,9 +90,9 @@ export default function Nav() {
               ) : (
                 <Link
                   key={link.label}
-                  to={link.href}
+                  to={clientPath(link.href)}
                   className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                    location.pathname === link.href
+                    isActive(link.href)
                       ? "text-brand bg-brand/5"
                       : "text-gray-700 hover:text-brand hover:bg-gray-50"
                   }`}
@@ -146,9 +154,9 @@ export default function Nav() {
             {config.nav.links.map((link) => (
               <div key={link.label}>
                 <Link
-                  to={link.href}
+                  to={clientPath(link.href)}
                   className={`block px-4 py-3 rounded-lg text-base font-medium transition-colors ${
-                    location.pathname === link.href
+                    isActive(link.href)
                       ? "text-brand bg-brand/5"
                       : "text-gray-700 hover:text-brand hover:bg-gray-50"
                   }`}
@@ -160,7 +168,7 @@ export default function Nav() {
                     {config.services.map((service) => (
                       <Link
                         key={service.slug}
-                        to={`/services/${service.slug}`}
+                        to={clientPath(`/services/${service.slug}`)}
                         className="block px-4 py-2 text-sm text-gray-600 hover:text-brand rounded-lg hover:bg-gray-50"
                       >
                         {service.name}
