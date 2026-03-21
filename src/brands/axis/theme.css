@@ -1,0 +1,154 @@
+/* ── Axis Building Group Brand Theme ── */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+[data-brand="axis"] {
+  --color-primary: #F2CF37;
+  --color-primary-dark: #D4B52E;
+  --color-primary-light: #F5DA5C;
+  --color-secondary: #F7F7F7;
+  --color-dark: #010101;
+  --color-light: #F7F7F7;
+  --color-bg: #010101;
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+}
+
+[data-brand="axis"] body,
+[data-brand="axis"] {
+  background-color: #010101;
+  font-family: 'DM Sans', sans-serif;
+  color: #F7F7F7;
+}
+
+[data-brand="axis"] h1,
+[data-brand="axis"] h2,
+[data-brand="axis"] h3,
+[data-brand="axis"] h4,
+[data-brand="axis"] h5,
+[data-brand="axis"] h6 {
+  font-family: 'Space Grotesk', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+/* ── Counter Number Animation ── */
+@keyframes counterPulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.9; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+[data-brand="axis"] .counter-number {
+  animation: counterPulse 0.3s ease-out;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Card Reveal Animation ── */
+@keyframes cardReveal {
+  from { opacity: 0; transform: translateY(40px) scale(0.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+[data-brand="axis"] .card-reveal {
+  animation: cardReveal 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ── Fade In Up ── */
+@keyframes axisFadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+[data-brand="axis"] .animate-fade-in-up {
+  animation: axisFadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ── Slide In Left ── */
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+[data-brand="axis"] .animate-slide-left {
+  animation: slideInLeft 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ── Slide In Right ── */
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+[data-brand="axis"] .animate-slide-right {
+  animation: slideInRight 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ── Yellow accent line pulse ── */
+@keyframes accentPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+[data-brand="axis"] .accent-pulse {
+  animation: accentPulse 2s ease-in-out infinite;
+}
+
+/* ── Scrollbar ── */
+[data-brand="axis"] ::-webkit-scrollbar {
+  width: 8px;
+}
+
+[data-brand="axis"] ::-webkit-scrollbar-track {
+  background: #010101;
+}
+
+[data-brand="axis"] ::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+[data-brand="axis"] ::-webkit-scrollbar-thumb:hover {
+  background: #F2CF37;
+}
+
+/* ── Selection ── */
+[data-brand="axis"] ::selection {
+  background: #F2CF37;
+  color: #010101;
+}
+
+/* ── Yellow border hover transition for cards ── */
+[data-brand="axis"] .axis-card {
+  border-left: 3px solid transparent;
+  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+[data-brand="axis"] .axis-card:hover {
+  border-left-color: #F2CF37;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(242, 207, 55, 0.08);
+}
+
+/* ── Smooth scroll for anchor links ── */
+[data-brand="axis"] {
+  scroll-behavior: smooth;
+}
+
+/* ── Image shimmer loading effect ── */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+[data-brand="axis"] img {
+  background: linear-gradient(90deg, #0a0a0a 25%, #1a1a1a 50%, #0a0a0a 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* ── Yellow glow for interactive elements ── */
+[data-brand="axis"] a:focus-visible,
+[data-brand="axis"] button:focus-visible {
+  outline: 2px solid #F2CF37;
+  outline-offset: 2px;
+}

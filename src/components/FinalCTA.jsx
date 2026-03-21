@@ -26,7 +26,7 @@ export default function FinalCTA() {
           <p className="text-white/80 font-semibold text-sm tracking-wide uppercase mb-3">
             {finalCTA.eyebrow}
           </p>
-          <h2 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-white mb-6">
+          <h2 className="text-4xl sm:text-5xl lg:text-[3.25rem] font-bold text-white mb-6">
             {finalCTA.headline}
           </h2>
           <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">

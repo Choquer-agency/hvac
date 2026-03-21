@@ -146,7 +146,7 @@ export default function ExitIntentPopup() {
                   type="submit"
                   className="w-full bg-accent text-white font-semibold py-3.5 rounded-lg hover:bg-accent-dark transition-colors shadow-lg hover:shadow-xl text-base"
                 >
-                  Claim My Free Tune-Up
+                  Claim My Free Inspection
                 </button>
                 <p className="text-xs text-gray-400 text-center">
                   No spam, ever. We'll just call to schedule your appointment.

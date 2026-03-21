@@ -14,7 +14,7 @@ export default function ServiceAreasPage() {
     <>
       <SEOHead
         title={`Service Areas — ${config.companyFullName}`}
-        description={`${config.companyFullName} serves ${config.serviceAreas.map((a) => a.name).join(", ")} and surrounding areas. Call for HVAC service today!`}
+        description={`${config.companyFullName} serves ${config.serviceAreas.map((a) => a.name).join(", ")} and surrounding areas. Call for roofing service today!`}
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -24,7 +24,8 @@ export default function ServiceAreasPage() {
       <PageHero
         eyebrow="Where We Work"
         headline="Areas We Serve"
-        body={`${config.companyName} proudly provides HVAC services across the greater ${config.address.city} metro area.`}
+        body={`${config.companyName} proudly provides roofing services across the greater ${config.address.city} metro area.`}
+        backgroundImage="/images/AZ.webp"
       />
 
       <div className="relative overflow-x-clip">

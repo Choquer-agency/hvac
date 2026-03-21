@@ -13,7 +13,7 @@ export default function ReviewsPage() {
     <>
       <SEOHead
         title={`Reviews — ${config.companyFullName}`}
-        description={`Read ${config.reviews.count} five-star reviews from real ${config.address.city} homeowners. See why they trust ${config.companyName} for all their HVAC needs.`}
+        description={`Read ${config.reviews.count} five-star reviews from real ${config.address.city} homeowners. See why they trust ${config.companyName} for all their roofing needs.`}
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -23,6 +23,7 @@ export default function ReviewsPage() {
       <PageHero
         eyebrow="Customer Reviews"
         headline="What Our Customers Say"
+        backgroundImage="/images/AZ1.webp"
       />
 
       <div className="relative overflow-x-clip">

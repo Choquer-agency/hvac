@@ -12,7 +12,7 @@ export default function ServiceGrid({ showHeader = true }) {
             <p className="text-brand font-semibold text-sm tracking-wide uppercase mb-3">
               {config.servicesSection.eyebrow}
             </p>
-            <h2 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-surface-dark">
+            <h2 className="text-4xl sm:text-5xl lg:text-[3.25rem] font-bold text-surface-dark">
               {config.servicesSection.headline}
             </h2>
           </div>

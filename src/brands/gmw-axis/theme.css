@@ -1,0 +1,154 @@
+/* ── GMW Inspections (Axis Template) Brand Theme ── */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+[data-brand="gmw-axis"] {
+  --color-primary: #D4A843;
+  --color-primary-dark: #B8912E;
+  --color-primary-light: #E0BC5E;
+  --color-secondary: #F7F7F7;
+  --color-dark: #1B2A4A;
+  --color-light: #F7F7F7;
+  --color-bg: #1B2A4A;
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+}
+
+[data-brand="gmw-axis"] body,
+[data-brand="gmw-axis"] {
+  background-color: #1B2A4A;
+  font-family: 'DM Sans', sans-serif;
+  color: #F7F7F7;
+}
+
+[data-brand="gmw-axis"] h1,
+[data-brand="gmw-axis"] h2,
+[data-brand="gmw-axis"] h3,
+[data-brand="gmw-axis"] h4,
+[data-brand="gmw-axis"] h5,
+[data-brand="gmw-axis"] h6 {
+  font-family: 'Space Grotesk', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+/* ── Counter Number Animation ── */
+@keyframes counterPulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.9; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+[data-brand="gmw-axis"] .counter-number {
+  animation: counterPulse 0.3s ease-out;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Card Reveal Animation ── */
+@keyframes cardReveal {
+  from { opacity: 0; transform: translateY(40px) scale(0.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+[data-brand="gmw-axis"] .card-reveal {
+  animation: cardReveal 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ── Fade In Up ── */
+@keyframes axisFadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+[data-brand="gmw-axis"] .animate-fade-in-up {
+  animation: axisFadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ── Slide In Left ── */
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+[data-brand="gmw-axis"] .animate-slide-left {
+  animation: slideInLeft 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ── Slide In Right ── */
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+[data-brand="gmw-axis"] .animate-slide-right {
+  animation: slideInRight 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ── Green accent line pulse ── */
+@keyframes accentPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+[data-brand="gmw-axis"] .accent-pulse {
+  animation: accentPulse 2s ease-in-out infinite;
+}
+
+/* ── Scrollbar ── */
+[data-brand="gmw-axis"] ::-webkit-scrollbar {
+  width: 8px;
+}
+
+[data-brand="gmw-axis"] ::-webkit-scrollbar-track {
+  background: #1B2A4A;
+}
+
+[data-brand="gmw-axis"] ::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+[data-brand="gmw-axis"] ::-webkit-scrollbar-thumb:hover {
+  background: #D4A843;
+}
+
+/* ── Selection ── */
+[data-brand="gmw-axis"] ::selection {
+  background: #D4A843;
+  color: #1B2A4A;
+}
+
+/* ── Green border hover transition for cards ── */
+[data-brand="gmw-axis"] .axis-card {
+  border-left: 3px solid transparent;
+  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+[data-brand="gmw-axis"] .axis-card:hover {
+  border-left-color: #D4A843;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(212, 168, 67, 0.08);
+}
+
+/* ── Smooth scroll for anchor links ── */
+[data-brand="gmw-axis"] {
+  scroll-behavior: smooth;
+}
+
+/* ── Image shimmer loading effect ── */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+[data-brand="gmw-axis"] img {
+  background: linear-gradient(90deg, #1B2A4A 25%, #1a1a1a 50%, #1B2A4A 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* ── Green glow for interactive elements ── */
+[data-brand="gmw-axis"] a:focus-visible,
+[data-brand="gmw-axis"] button:focus-visible {
+  outline: 2px solid #D4A843;
+  outline-offset: 2px;
+}

@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand: var(--color-primary);
-  --color-brand-dark: var(--color-primaryDark);
-  --color-brand-light: var(--color-primaryLight);
-  --color-accent: var(--color-secondary);
-  --color-accent-dark: color-mix(in srgb, var(--color-secondary) 85%, black);
-  --color-surface-dark: var(--color-dark);
-  --color-surface-light: var(--color-light);
+  --color-brand: var(--brand-primary, #3D3E3D);
+  --color-brand-dark: var(--brand-primaryDark, #2D2E2D);
+  --color-brand-light: var(--brand-primaryLight, #5D5E5D);
+  --color-accent: var(--brand-secondary, #F89525);
+  --color-surface-dark: var(--brand-dark, #1a1a1a);
+  --color-surface-light: var(--brand-light, #F8F6F3);
 
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--brand-font-body, "Inter"), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--brand-font-heading, "Inter"), ui-sans-serif, system-ui, sans-serif;
 }
 
 html {
@@ -22,31 +22,11 @@ html {
 body {
   margin: 0;
   font-family: var(--font-sans);
-  color: var(--color-dark);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: transparent;
 }
 
-/* Animation keyframes */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes pulse-tab {
-  0%, 100% {
-    transform: translateY(-50%) scale(1);
-    box-shadow: 0 4px 12px rgba(255, 149, 0, 0.3);
-  }
-  50% {
-    transform: translateY(-50%) scale(1.15);
-    box-shadow: 0 6px 24px rgba(255, 149, 0, 0.5);
-  }
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
 }

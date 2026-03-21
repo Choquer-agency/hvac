@@ -1,0 +1,172 @@
+/* ── Ironwood Builders Brand Theme ── */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Lato:wght@300;400;700&display=swap');
+
+[data-brand="ironwood"] {
+  --color-primary: #3B4841;
+  --color-primary-dark: #2A3630;
+  --color-primary-light: #4D5E54;
+  --color-secondary: #ED6442;
+  --color-accent: #CFDA9E;
+  --color-cream: #FDE9A2;
+  --color-dark: #3B4841;
+  --color-light: #FDF8F0;
+  --color-bg: #FDF8F0;
+  --font-heading: 'Cormorant Garamond', serif;
+  --font-body: 'Lato', sans-serif;
+}
+
+[data-brand="ironwood"] body,
+[data-brand="ironwood"] {
+  background-color: #FDF8F0;
+  font-family: 'Lato', sans-serif;
+  color: #3B4841;
+}
+
+[data-brand="ironwood"] h1,
+[data-brand="ironwood"] h2,
+[data-brand="ironwood"] h3,
+[data-brand="ironwood"] h4,
+[data-brand="ironwood"] h5,
+[data-brand="ironwood"] h6 {
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: 0.01em;
+  line-height: 1.15;
+}
+
+/* ── Elegant Slow Fade In ── */
+@keyframes ironwoodFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+[data-brand="ironwood"] .animate-fade-in {
+  animation: ironwoodFadeIn 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+/* ── Slow Fade In Up ── */
+@keyframes ironwoodFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+[data-brand="ironwood"] .animate-fade-in-up {
+  animation: ironwoodFadeInUp 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+/* ── Gentle Scale In ── */
+@keyframes ironwoodScaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+[data-brand="ironwood"] .animate-scale-in {
+  animation: ironwoodScaleIn 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+/* ── Slow Parallax Zoom ── */
+@keyframes ironwoodParallaxZoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+
+[data-brand="ironwood"] .animate-parallax-zoom {
+  animation: ironwoodParallaxZoom 25s ease-in-out infinite alternate;
+}
+
+/* ── Thin Underline Slide ── */
+@keyframes ironwoodUnderlineSlide {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* ── Scroll Reveal ── */
+[data-brand="ironwood"] .reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+[data-brand="ironwood"] .reveal-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Subtle Border Styles ── */
+[data-brand="ironwood"] .border-editorial {
+  border-color: rgba(59, 72, 65, 0.12);
+}
+
+[data-brand="ironwood"] .border-terracotta {
+  border-color: #ED6442;
+}
+
+/* ── Serif Heading Refinements ── */
+[data-brand="ironwood"] .heading-editorial {
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+[data-brand="ironwood"] .heading-display {
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+  font-weight: 300;
+}
+
+/* ── Custom Scrollbar ── */
+[data-brand="ironwood"] ::-webkit-scrollbar {
+  width: 6px;
+}
+
+[data-brand="ironwood"] ::-webkit-scrollbar-track {
+  background: #FDF8F0;
+}
+
+[data-brand="ironwood"] ::-webkit-scrollbar-thumb {
+  background: #3B4841;
+  border-radius: 3px;
+}
+
+[data-brand="ironwood"] ::-webkit-scrollbar-thumb:hover {
+  background: #ED6442;
+}
+
+/* ── Selection ── */
+[data-brand="ironwood"] ::selection {
+  background: #CFDA9E;
+  color: #3B4841;
+}
+
+/* ── Smooth Scroll ── */
+[data-brand="ironwood"] {
+  scroll-behavior: smooth;
+}

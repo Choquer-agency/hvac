@@ -1,0 +1,159 @@
+/* ── GMW Inspections (Evergreen Template) Brand Theme ── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+[data-brand="gmw-evergreen"] {
+  --color-primary: #1B2A4A;
+  --color-primary-dark: #111D33;
+  --color-primary-light: #2D4A6F;
+  --color-secondary: #D4A843;
+  --color-accent: #B8912E;
+  --color-logo-green: #D4A843;
+  --color-dark: #1B2A4A;
+  --color-light: #F5F2EC;
+  --color-bg: #FFFFFF;
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+[data-brand="gmw-evergreen"] body,
+[data-brand="gmw-evergreen"] {
+  background-color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  color: #1B2A4A;
+}
+
+[data-brand="gmw-evergreen"] h1,
+[data-brand="gmw-evergreen"] h2,
+[data-brand="gmw-evergreen"] h3,
+[data-brand="gmw-evergreen"] h4,
+[data-brand="gmw-evergreen"] h5,
+[data-brand="gmw-evergreen"] h6 {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* ── Fade In Up ── */
+@keyframes evergreenFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+[data-brand="gmw-evergreen"] .animate-fade-in {
+  animation: evergreenFadeIn 0.5s ease-out forwards;
+}
+
+[data-brand="gmw-evergreen"] .animate-fade-in-slow {
+  animation: evergreenFadeIn 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ── Scroll-triggered reveal ── */
+[data-brand="gmw-evergreen"] .reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+[data-brand="gmw-evergreen"] .reveal-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Parallax zoom ── */
+@keyframes evergreenParallax {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
+
+[data-brand="gmw-evergreen"] .animate-parallax {
+  animation: evergreenParallax 20s ease-in-out infinite alternate;
+}
+
+/* ── Marquee ── */
+@keyframes evergreenMarquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-33.333%); }
+}
+
+[data-brand="gmw-evergreen"] .evergreen-marquee {
+  animation: evergreenMarquee 30s linear infinite;
+}
+
+[data-brand="gmw-evergreen"] .evergreen-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* ── Clip Reveal ── */
+@keyframes evergreenClipReveal {
+  from { clip-path: inset(100% 0 0 0); }
+  to { clip-path: inset(0); }
+}
+
+[data-brand="gmw-evergreen"] .animate-clip-reveal {
+  animation: evergreenClipReveal 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ── Subtle Float ── */
+@keyframes evergreenFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+[data-brand="gmw-evergreen"] .animate-float {
+  animation: evergreenFloat 5s ease-in-out infinite;
+}
+
+/* ── Nav link underline ── */
+[data-brand="gmw-evergreen"] .nav-link {
+  position: relative;
+}
+
+[data-brand="gmw-evergreen"] .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #B8912E;
+  transition: width 0.3s ease-out;
+}
+
+[data-brand="gmw-evergreen"] .nav-link:hover::after {
+  width: 100%;
+}
+
+/* ── Smooth transitions ── */
+[data-brand="gmw-evergreen"] a,
+[data-brand="gmw-evergreen"] button {
+  transition: all 0.3s ease-out;
+}
+
+/* ── Custom scrollbar ── */
+[data-brand="gmw-evergreen"] ::-webkit-scrollbar {
+  width: 6px;
+}
+
+[data-brand="gmw-evergreen"] ::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+
+[data-brand="gmw-evergreen"] ::-webkit-scrollbar-thumb {
+  background: #1B2A4A;
+  border-radius: 3px;
+}
+
+[data-brand="gmw-evergreen"] ::-webkit-scrollbar-thumb:hover {
+  background: #B8912E;
+}
+
+/* ── Selection color ── */
+[data-brand="gmw-evergreen"] ::selection {
+  background-color: #D4A843;
+  color: #1B2A4A;
+}

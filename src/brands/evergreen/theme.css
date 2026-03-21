@@ -1,0 +1,159 @@
+/* ── Evergreen Homes Brand Theme ── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+[data-brand="evergreen"] {
+  --color-primary: #193133;
+  --color-primary-dark: #0F2022;
+  --color-primary-light: #2A4A4D;
+  --color-secondary: #D0FF71;
+  --color-accent: #4CAF50;
+  --color-logo-green: #2D6A4F;
+  --color-dark: #193133;
+  --color-light: #F0F7F0;
+  --color-bg: #FFFFFF;
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+[data-brand="evergreen"] body,
+[data-brand="evergreen"] {
+  background-color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  color: #193133;
+}
+
+[data-brand="evergreen"] h1,
+[data-brand="evergreen"] h2,
+[data-brand="evergreen"] h3,
+[data-brand="evergreen"] h4,
+[data-brand="evergreen"] h5,
+[data-brand="evergreen"] h6 {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* ── Fade In Up ── */
+@keyframes evergreenFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+[data-brand="evergreen"] .animate-fade-in {
+  animation: evergreenFadeIn 0.5s ease-out forwards;
+}
+
+[data-brand="evergreen"] .animate-fade-in-slow {
+  animation: evergreenFadeIn 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ── Scroll-triggered reveal ── */
+[data-brand="evergreen"] .reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+[data-brand="evergreen"] .reveal-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Parallax zoom ── */
+@keyframes evergreenParallax {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
+
+[data-brand="evergreen"] .animate-parallax {
+  animation: evergreenParallax 20s ease-in-out infinite alternate;
+}
+
+/* ── Marquee ── */
+@keyframes evergreenMarquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-33.333%); }
+}
+
+[data-brand="evergreen"] .evergreen-marquee {
+  animation: evergreenMarquee 30s linear infinite;
+}
+
+[data-brand="evergreen"] .evergreen-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* ── Clip Reveal ── */
+@keyframes evergreenClipReveal {
+  from { clip-path: inset(100% 0 0 0); }
+  to { clip-path: inset(0); }
+}
+
+[data-brand="evergreen"] .animate-clip-reveal {
+  animation: evergreenClipReveal 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ── Subtle Float ── */
+@keyframes evergreenFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+[data-brand="evergreen"] .animate-float {
+  animation: evergreenFloat 5s ease-in-out infinite;
+}
+
+/* ── Nav link underline ── */
+[data-brand="evergreen"] .nav-link {
+  position: relative;
+}
+
+[data-brand="evergreen"] .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #4CAF50;
+  transition: width 0.3s ease-out;
+}
+
+[data-brand="evergreen"] .nav-link:hover::after {
+  width: 100%;
+}
+
+/* ── Smooth transitions ── */
+[data-brand="evergreen"] a,
+[data-brand="evergreen"] button {
+  transition: all 0.3s ease-out;
+}
+
+/* ── Custom scrollbar ── */
+[data-brand="evergreen"] ::-webkit-scrollbar {
+  width: 6px;
+}
+
+[data-brand="evergreen"] ::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+
+[data-brand="evergreen"] ::-webkit-scrollbar-thumb {
+  background: #193133;
+  border-radius: 3px;
+}
+
+[data-brand="evergreen"] ::-webkit-scrollbar-thumb:hover {
+  background: #4CAF50;
+}
+
+/* ── Selection color ── */
+[data-brand="evergreen"] ::selection {
+  background-color: #D0FF71;
+  color: #193133;
+}

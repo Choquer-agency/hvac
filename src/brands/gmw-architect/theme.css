@@ -1,0 +1,130 @@
+/* ── GMW Inspections (Architect Template) Brand Theme ── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Rethink+Sans:wght@400;500;600;700;800&display=swap');
+
+[data-brand="gmw-architect"] {
+  --color-primary: #1B2A4A;
+  --color-primary-dark: #111D33;
+  --color-primary-light: #2D4A6F;
+  --color-secondary: #D4A843;
+  --color-accent: #E0BC5E;
+  --color-dark: #0F1520;
+  --color-light: #F5F2EC;
+  --color-bg: #F5F2EC;
+  --font-heading: 'Rethink Sans', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+[data-brand="gmw-architect"] body,
+[data-brand="gmw-architect"] {
+  background-color: #F5F2EC;
+  font-family: 'Inter', sans-serif;
+  color: #1B2A4A;
+}
+
+[data-brand="gmw-architect"] h1,
+[data-brand="gmw-architect"] h2,
+[data-brand="gmw-architect"] h3,
+[data-brand="gmw-architect"] h4,
+[data-brand="gmw-architect"] h5,
+[data-brand="gmw-architect"] h6 {
+  font-family: 'Rethink Sans', sans-serif;
+}
+
+/* ── fadeInUp Animation ── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+[data-brand="gmw-architect"] .animate-fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ── Parallax Zoom ── */
+@keyframes parallaxZoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.15);
+  }
+}
+
+[data-brand="gmw-architect"] .animate-parallax-zoom {
+  animation: parallaxZoom 20s ease-in-out infinite alternate;
+}
+
+/* ── Subtle Float ── */
+@keyframes subtleFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+[data-brand="gmw-architect"] .animate-float {
+  animation: subtleFloat 6s ease-in-out infinite;
+}
+
+/* ── Marquee ── */
+@keyframes marqueeScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-33.333%);
+  }
+}
+
+[data-brand="gmw-architect"] .architect-marquee {
+  animation: marqueeScroll 25s linear infinite;
+}
+
+[data-brand="gmw-architect"] .architect-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* ── Smooth reveal for scroll-triggered elements ── */
+[data-brand="gmw-architect"] .reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+[data-brand="gmw-architect"] .reveal-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Custom scrollbar ── */
+[data-brand="gmw-architect"] ::-webkit-scrollbar {
+  width: 8px;
+}
+
+[data-brand="gmw-architect"] ::-webkit-scrollbar-track {
+  background: #F5F2EC;
+}
+
+[data-brand="gmw-architect"] ::-webkit-scrollbar-thumb {
+  background: #1B2A4A;
+  border-radius: 4px;
+}
+
+[data-brand="gmw-architect"] ::-webkit-scrollbar-thumb:hover {
+  background: #D4A843;
+}
+
+/* ── Selection color ── */
+[data-brand="gmw-architect"] ::selection {
+  background: #D4A843;
+  color: white;
+}

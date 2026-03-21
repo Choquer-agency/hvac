@@ -1,0 +1,130 @@
+/* ── Architect Brand Theme ── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Rethink+Sans:wght@400;500;600;700;800&display=swap');
+
+[data-brand="architect"] {
+  --color-primary: #3D3E3D;
+  --color-primary-dark: #2D2E2D;
+  --color-primary-light: #5D5E5D;
+  --color-secondary: #F89525;
+  --color-accent: #FBB81B;
+  --color-dark: #1a1a1a;
+  --color-light: #FAF7F2;
+  --color-bg: #FAF7F2;
+  --font-heading: 'Rethink Sans', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+[data-brand="architect"] body,
+[data-brand="architect"] {
+  background-color: #FAF7F2;
+  font-family: 'Inter', sans-serif;
+  color: #3D3E3D;
+}
+
+[data-brand="architect"] h1,
+[data-brand="architect"] h2,
+[data-brand="architect"] h3,
+[data-brand="architect"] h4,
+[data-brand="architect"] h5,
+[data-brand="architect"] h6 {
+  font-family: 'Rethink Sans', sans-serif;
+}
+
+/* ── fadeInUp Animation ── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+[data-brand="architect"] .animate-fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ── Parallax Zoom ── */
+@keyframes parallaxZoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.15);
+  }
+}
+
+[data-brand="architect"] .animate-parallax-zoom {
+  animation: parallaxZoom 20s ease-in-out infinite alternate;
+}
+
+/* ── Subtle Float ── */
+@keyframes subtleFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+[data-brand="architect"] .animate-float {
+  animation: subtleFloat 6s ease-in-out infinite;
+}
+
+/* ── Marquee ── */
+@keyframes marqueeScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-33.333%);
+  }
+}
+
+[data-brand="architect"] .architect-marquee {
+  animation: marqueeScroll 25s linear infinite;
+}
+
+[data-brand="architect"] .architect-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* ── Smooth reveal for scroll-triggered elements ── */
+[data-brand="architect"] .reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+[data-brand="architect"] .reveal-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Custom scrollbar ── */
+[data-brand="architect"] ::-webkit-scrollbar {
+  width: 8px;
+}
+
+[data-brand="architect"] ::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+
+[data-brand="architect"] ::-webkit-scrollbar-thumb {
+  background: #3D3E3D;
+  border-radius: 4px;
+}
+
+[data-brand="architect"] ::-webkit-scrollbar-thumb:hover {
+  background: #F89525;
+}
+
+/* ── Selection color ── */
+[data-brand="architect"] ::selection {
+  background: #F89525;
+  color: white;
+}

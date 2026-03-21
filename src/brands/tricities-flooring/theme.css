@@ -1,0 +1,161 @@
+/* ── TriCities Flooring Brand Theme (Light Axis) ── */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+[data-brand="tricities-flooring"] {
+  --color-primary: #00B4D8;
+  --color-primary-dark: #0096B7;
+  --color-primary-light: #48CAE4;
+  --color-secondary: #39FF14;
+  --color-dark: #1a1a1a;
+  --color-light: #FFFFFF;
+  --color-bg: #FFFFFF;
+  --color-card-bg: #F5F7FA;
+  --color-border: #E2E8F0;
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+}
+
+[data-brand="tricities-flooring"] body,
+[data-brand="tricities-flooring"] {
+  background-color: #FFFFFF;
+  font-family: 'DM Sans', sans-serif;
+  color: #1a1a1a;
+}
+
+[data-brand="tricities-flooring"] h1,
+[data-brand="tricities-flooring"] h2,
+[data-brand="tricities-flooring"] h3,
+[data-brand="tricities-flooring"] h4,
+[data-brand="tricities-flooring"] h5,
+[data-brand="tricities-flooring"] h6 {
+  font-family: 'Space Grotesk', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+/* ── Counter Number Animation ── */
+@keyframes counterPulseLight {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.9; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+[data-brand="tricities-flooring"] .counter-number {
+  animation: counterPulseLight 0.3s ease-out;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Card Reveal Animation ── */
+@keyframes cardRevealLight {
+  from { opacity: 0; transform: translateY(40px) scale(0.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+[data-brand="tricities-flooring"] .card-reveal {
+  animation: cardRevealLight 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ── Fade In Up ── */
+@keyframes tcfFadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+[data-brand="tricities-flooring"] .animate-fade-in-up {
+  animation: tcfFadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ── Slide In Left ── */
+@keyframes slideInLeftLight {
+  from { opacity: 0; transform: translateX(-60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+[data-brand="tricities-flooring"] .animate-slide-left {
+  animation: slideInLeftLight 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ── Slide In Right ── */
+@keyframes slideInRightLight {
+  from { opacity: 0; transform: translateX(60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+[data-brand="tricities-flooring"] .animate-slide-right {
+  animation: slideInRightLight 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ── Blue accent line pulse ── */
+@keyframes accentPulseLight {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+[data-brand="tricities-flooring"] .accent-pulse {
+  animation: accentPulseLight 2s ease-in-out infinite;
+}
+
+/* ── Scrollbar ── */
+[data-brand="tricities-flooring"] ::-webkit-scrollbar {
+  width: 8px;
+}
+
+[data-brand="tricities-flooring"] ::-webkit-scrollbar-track {
+  background: #F5F7FA;
+}
+
+[data-brand="tricities-flooring"] ::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+[data-brand="tricities-flooring"] ::-webkit-scrollbar-thumb:hover {
+  background: #00B4D8;
+}
+
+/* ── Selection ── */
+[data-brand="tricities-flooring"] ::selection {
+  background: #00B4D8;
+  color: #FFFFFF;
+}
+
+/* ── Blue border hover transition for cards ── */
+[data-brand="tricities-flooring"] .tcf-card {
+  border-left: 3px solid transparent;
+  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+[data-brand="tricities-flooring"] .tcf-card:hover {
+  border-left-color: #00B4D8;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 180, 216, 0.1);
+}
+
+/* ── Smooth scroll for anchor links ── */
+[data-brand="tricities-flooring"] {
+  scroll-behavior: smooth;
+}
+
+/* ── Image shimmer loading effect (light) ── */
+@keyframes shimmerLight {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+[data-brand="tricities-flooring"] img:not([data-no-shimmer]) {
+  background: linear-gradient(90deg, #F5F7FA 25%, #E2E8F0 50%, #F5F7FA 75%);
+  background-size: 200% 100%;
+  animation: shimmerLight 1.5s infinite;
+}
+
+[data-brand="tricities-flooring"] img[data-no-shimmer] {
+  background: none;
+  animation: none;
+}
+
+/* ── Blue glow for interactive elements ── */
+[data-brand="tricities-flooring"] a:focus-visible,
+[data-brand="tricities-flooring"] button:focus-visible {
+  outline: 2px solid #00B4D8;
+  outline-offset: 2px;
+}

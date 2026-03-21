@@ -1,5 +1,6 @@
 import SEOHead from "../components/SEOHead";
 import Hero from "../components/Hero";
+import AboutStatement from "../components/AboutStatement";
 import ProblemGrid from "../components/ProblemGrid";
 import TrustSection from "../components/TrustSection";
 import ProcessSteps from "../components/ProcessSteps";
@@ -11,6 +12,7 @@ export default function HomePage() {
     <>
       <SEOHead />
       <Hero />
+      <AboutStatement />
 
       {/* Sections wrapper with decorative gradient blobs for color flow */}
       <div className="relative overflow-x-clip">

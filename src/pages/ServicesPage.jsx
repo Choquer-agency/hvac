@@ -11,8 +11,8 @@ export default function ServicesPage() {
   return (
     <>
       <SEOHead
-        title={`HVAC Services in ${config.address.city}, ${config.address.state}`}
-        description={`${config.companyFullName} offers AC repair, heating repair, installation, maintenance, and indoor air quality services in ${config.address.city}. Call today!`}
+        title={`Roofing Services in ${config.address.city}, ${config.address.state}`}
+        description={`${config.companyFullName} offers roof repair, replacement, storm damage repair, inspections, and gutter services in ${config.address.city}. Call today!`}
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -22,7 +22,8 @@ export default function ServicesPage() {
       <PageHero
         eyebrow={config.servicesSection.eyebrow}
         headline={config.servicesSection.headline}
-        body={`Whatever your heating and cooling needs, ${config.companyName} has you covered with expert service and upfront pricing.`}
+        body={`Whatever your roofing needs, ${config.companyName} has you covered with expert service and upfront pricing.`}
+        backgroundImage="/images/raze-solar-MyBBMM317A4-unsplash.webp"
       />
 
       <div className="relative overflow-x-clip">

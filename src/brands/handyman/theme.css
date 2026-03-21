@@ -1,0 +1,176 @@
+/* ── Handyman Brand Theme ── */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+[data-brand="handyman"] {
+  --color-primary: #16205B;
+  --color-primary-dark: #0D1440;
+  --color-primary-light: #1E2D73;
+  --color-secondary: #F15928;
+  --color-accent: #0372FF;
+  --color-lavender: #A3A9F5;
+  --color-dark: #16205B;
+  --color-light: #E1EAF9;
+  --color-bg: #E1EAF9;
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Figtree', sans-serif;
+}
+
+[data-brand="handyman"] body,
+[data-brand="handyman"] {
+  background-color: #E1EAF9;
+  font-family: 'Figtree', sans-serif;
+  color: #16205B;
+}
+
+[data-brand="handyman"] h1,
+[data-brand="handyman"] h2,
+[data-brand="handyman"] h3,
+[data-brand="handyman"] h4,
+[data-brand="handyman"] h5,
+[data-brand="handyman"] h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* ── Bouncy Pop-In ── */
+@keyframes bouncePop {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) translateY(40px);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.08) translateY(-8px);
+  }
+  70% {
+    transform: scale(0.95) translateY(2px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+[data-brand="handyman"] .animate-bounce-pop {
+  animation: bouncePop 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* ── Gentle Float ── */
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+[data-brand="handyman"] .animate-gentle-float {
+  animation: gentleFloat 4s ease-in-out infinite;
+}
+
+/* ── Slow Float (offset) ── */
+@keyframes slowFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+  66% {
+    transform: translateY(4px) rotate(-1deg);
+  }
+}
+
+[data-brand="handyman"] .animate-slow-float {
+  animation: slowFloat 6s ease-in-out infinite;
+}
+
+/* ── Card Tilt Hover Effect ── */
+[data-brand="handyman"] .card-tilt {
+  perspective: 800px;
+  transform-style: preserve-3d;
+}
+
+[data-brand="handyman"] .card-tilt-inner {
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.4s ease;
+}
+
+[data-brand="handyman"] .card-tilt:hover .card-tilt-inner {
+  transform: rotateX(-4deg) rotateY(4deg) translateY(-4px);
+  box-shadow: 0 20px 40px rgba(22, 32, 91, 0.12);
+}
+
+/* ── Backdrop Blur Utilities ── */
+[data-brand="handyman"] .blur-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+[data-brand="handyman"] .blur-badge {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* ── Wiggle ── */
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-3deg); }
+  75% { transform: rotate(3deg); }
+}
+
+[data-brand="handyman"] .animate-wiggle:hover {
+  animation: wiggle 0.4s ease-in-out;
+}
+
+/* ── Fade In Up ── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+[data-brand="handyman"] .animate-fade-in-up {
+  animation: fadeInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* ── Custom Scrollbar ── */
+[data-brand="handyman"] ::-webkit-scrollbar {
+  width: 8px;
+}
+
+[data-brand="handyman"] ::-webkit-scrollbar-track {
+  background: #E1EAF9;
+}
+
+[data-brand="handyman"] ::-webkit-scrollbar-thumb {
+  background: #A3A9F5;
+  border-radius: 4px;
+}
+
+[data-brand="handyman"] ::-webkit-scrollbar-thumb:hover {
+  background: #F15928;
+}
+
+/* ── Playful Rotated Cards ── */
+[data-brand="handyman"] .card-rotate-left {
+  transform: rotate(-2deg);
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+[data-brand="handyman"] .card-rotate-right {
+  transform: rotate(2deg);
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+[data-brand="handyman"] .card-rotate-left:hover,
+[data-brand="handyman"] .card-rotate-right:hover {
+  transform: rotate(0deg) scale(1.03);
+}

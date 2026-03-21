@@ -38,8 +38,10 @@ export default function ServiceAreaDetailPage() {
       </div>
 
       <PageHero
+        eyebrow="Service Area"
         headline={area.headline}
         body={area.body}
+        backgroundImage="/images/AZ.webp"
       />
 
       <div className="relative overflow-x-clip">

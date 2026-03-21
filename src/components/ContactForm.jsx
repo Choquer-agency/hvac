@@ -101,7 +101,7 @@ export default function ContactForm() {
           name="message"
           rows={4}
           className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-brand focus:ring-2 focus:ring-brand/20 outline-none transition-all text-sm resize-none"
-          placeholder="Tell us about your HVAC issue or what service you need..."
+          placeholder="Tell us about your roofing needs or what service you're looking for..."
         />
       </div>
 
