@@ -37,6 +37,21 @@ const brands = [
     colors: { bg: "#FDF8F0", primary: "#3B4841", accent: "#ED6442" },
     type: "Luxury Custom Homes",
   },
+  {
+    slug: "nexus",
+    name: "Nexus AI",
+    tagline: "AI-powered marketing education.",
+    colors: { bg: "#0A0A0F", primary: "#7C3AED", accent: "#3B82F6" },
+    type: "AI Marketing Courses",
+    dark: true,
+  },
+  {
+    slug: "numbers-west",
+    name: "Numbers West",
+    tagline: "Training & strategy for the AI era.",
+    colors: { bg: "#F4F7FA", primary: "#384D68", accent: "#5088B8" },
+    type: "Training & Consulting",
+  },
 ];
 
 export default function BrandSelector() {

@@ -19,6 +19,8 @@ const brandModules = {
   "gmw-axis": lazy(() => import("./brands/gmw-axis/HomePage")),
   "tricities-flooring": lazy(() => import("./brands/tricities-flooring/HomePage")),
   ment: lazy(() => import("./brands/ment/HomePage")),
+  nexus: lazy(() => import("./brands/nexus/HomePage")),
+  "numbers-west": lazy(() => import("./brands/numbers-west/HomePage")),
 };
 
 // Lazy-load brand configs
@@ -32,6 +34,8 @@ const brandConfigs = {
   "gmw-axis": () => import("./brands/gmw-axis/config"),
   "tricities-flooring": () => import("./brands/tricities-flooring/config"),
   ment: () => import("./brands/ment/config"),
+  nexus: () => import("./brands/nexus/config"),
+  "numbers-west": () => import("./brands/numbers-west/config"),
 };
 
 const BrandSelector = lazy(() => import("./pages/BrandSelector"));

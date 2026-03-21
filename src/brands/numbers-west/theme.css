@@ -1,0 +1,65 @@
+[data-brand="numbers-west"] {
+  --color-bg-light: #B8D0E4;
+  --color-primary: #4E6E8E;
+  --color-primary-deep: #384D68;
+  --color-accent: #5088B8;
+  --color-text-primary: #1A2332;
+  --color-text-light: #FFFFFF;
+  --color-text-muted: #8A9BB0;
+  --color-surface: #F4F7FA;
+  --color-surface-card: #FFFFFF;
+  --font-heading: "DM Sans", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+
+  /* Responsive clip cut sizes */
+  --cut-lg: 40px;
+  --cut-md: 24px;
+  --cut-sm: 16px;
+
+  font-family: var(--font-body);
+  color: var(--color-text-primary);
+  background-color: var(--color-surface);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+@media (min-width: 768px) {
+  [data-brand="numbers-west"] {
+    --cut-lg: 80px;
+    --cut-md: 40px;
+    --cut-sm: 24px;
+  }
+}
+
+[data-brand="numbers-west"] ::selection {
+  background-color: rgba(80, 136, 184, 0.2);
+  color: #1A2332;
+}
+
+[data-brand="numbers-west"] .nw-gradient-text {
+  background: linear-gradient(135deg, #384D68, #5088B8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Responsive dark card with angled cut */
+[data-brand="numbers-west"] .nw-dark-card {
+  clip-path: polygon(0 0, calc(100% - var(--cut-lg)) 0, 100% var(--cut-lg), 100% 100%, 0 100%);
+  border-radius: 3px;
+}
+
+[data-brand="numbers-west"] .nw-card {
+  clip-path: polygon(0 0, calc(100% - var(--cut-md)) 0, 100% var(--cut-md), 100% 100%, 0 100%);
+  border-radius: 3px;
+}
+
+[data-brand="numbers-west"] .nw-card-sm {
+  clip-path: polygon(0 0, calc(100% - var(--cut-sm)) 0, 100% var(--cut-sm), 100% 100%, 0 100%);
+  border-radius: 3px;
+}
+
+@keyframes nwAurora {
+  0% { background-position: 50% 50%, 50% 50%; }
+  100% { background-position: 350% 50%, 350% 50%; }
+}

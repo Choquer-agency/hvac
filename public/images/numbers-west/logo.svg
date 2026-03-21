@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40" fill="none">
+  <rect x="0" y="4" width="32" height="32" rx="6" fill="#384D68"/>
+  <text x="16" y="25" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="700" font-size="13" fill="white">NW</text>
+  <text x="42" y="27" font-family="system-ui, sans-serif" font-weight="700" font-size="18" fill="#1A2332">Numbers West</text>
+</svg>
