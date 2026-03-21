@@ -172,7 +172,7 @@ export default function Nav() {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
-            className="fixed inset-0 z-40 flex flex-col items-start justify-center bg-[#F5F0EB] px-12 md:hidden"
+            className="fixed inset-0 z-40 flex flex-col items-start justify-end bg-[#F5F0EB] px-8 pb-24 pt-20 md:hidden overflow-y-auto"
           >
             {navLinks.map((link, i) => (
               <motion.a
@@ -186,7 +186,7 @@ export default function Nav() {
                   duration: 0.6,
                   ease: [0.25, 0.46, 0.45, 0.94],
                 }}
-                className="mb-8 text-3xl text-[#4A4038] transition-colors duration-300 hover:text-[#C4A882]"
+                className="mb-6 text-2xl text-[#4A4038] transition-colors duration-300 hover:text-[#C4A882]"
                 style={{
                   fontFamily: "'Playfair Display', serif",
                   fontWeight: 400,
@@ -195,6 +195,14 @@ export default function Nav() {
                 {link.label}
               </motion.a>
             ))}
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.6 }}
+              className="mt-4 mb-2 h-[1px] w-12 bg-[#C4A882]/40"
+            />
+
             <motion.a
               href="#contact"
               onClick={(e) => handleNavClick(e, "#contact")}
@@ -205,7 +213,7 @@ export default function Nav() {
                 duration: 0.6,
                 ease: [0.25, 0.46, 0.45, 0.94],
               }}
-              className="mt-4 flex items-center gap-3 text-lg tracking-wide text-[#C4A882]"
+              className="mt-4 flex items-center gap-3 text-base tracking-wide text-[#C4A882]"
               style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300 }}
             >
               Inquire
@@ -222,6 +230,16 @@ export default function Nav() {
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
             </motion.a>
+
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.7, duration: 0.6 }}
+              className="mt-auto pt-8 text-xs text-[#4A4038]/30"
+              style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300 }}
+            >
+              {config.tagline}
+            </motion.p>
           </motion.div>
         )}
       </AnimatePresence>
