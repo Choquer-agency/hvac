@@ -14,7 +14,8 @@ export default function BCGrantCallout() {
   return (
     <section ref={ref} className="px-4 py-12 sm:px-6 lg:py-24">
       <motion.div initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7, ease }}
-        className="nw-dark-card relative mx-auto max-w-7xl overflow-hidden bg-[#1A2332] px-6 py-10 sm:px-16 sm:py-18">
+        className="nw-dark-card relative mx-auto max-w-7xl overflow-hidden px-6 py-10 sm:px-16 sm:py-18"
+        style={{ backgroundColor: "#1A2332" }}>
         <div className="pointer-events-none absolute right-0 top-0 h-[400px] w-[400px] rounded-full bg-[#5088B8]/10 blur-[120px]" />
 
         <div className="relative flex flex-col items-center gap-8 md:flex-row md:justify-between md:gap-12">

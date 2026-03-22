@@ -11,7 +11,8 @@ export default function Newsletter() {
   return (
     <section ref={ref} className="px-4 pt-8 pb-16 sm:px-6">
       <motion.div initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7, ease }}
-        className="nw-dark-card relative mx-auto max-w-7xl overflow-hidden bg-[#1A2332] px-6 py-12 sm:px-16 sm:py-18">
+        className="nw-dark-card relative mx-auto max-w-7xl overflow-hidden px-6 py-12 sm:px-16 sm:py-18"
+        style={{ backgroundColor: "#1A2332" }}>
         <div className="pointer-events-none absolute right-0 top-0 h-[400px] w-[400px] rounded-full bg-[#5088B8]/10 blur-[120px]" />
         <div className="pointer-events-none absolute bottom-0 left-0 h-[300px] w-[300px] rounded-full bg-[#4E6E8E]/8 blur-[100px]" />
 

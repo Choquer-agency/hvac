@@ -97,8 +97,8 @@ function Philosophy() {
       <div className="mx-auto max-w-7xl">
         {/* Dark card with clipped corner (newsletter-style) */}
         <motion.div initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7, ease }}
-          className="relative overflow-hidden bg-[#1A2332] px-8 py-14 sm:px-16 sm:py-18"
-          className="nw-dark-card">
+          className="nw-dark-card relative overflow-hidden px-6 py-10 sm:px-16 sm:py-14"
+          style={{ backgroundColor: "#1A2332" }}>
           <div className="pointer-events-none absolute" style={{ top: 79, right: -1, width: SQRT(80), height: 2, backgroundColor: "rgba(80,136,184,0.3)", transformOrigin: "top right", transform: "rotate(45deg)" }} />
           <div className="pointer-events-none absolute right-0 top-0 h-[400px] w-[400px] rounded-full bg-[#5088B8]/10 blur-[120px]" />
           <div className="pointer-events-none absolute bottom-0 left-0 h-[300px] w-[300px] rounded-full bg-[#4E6E8E]/8 blur-[100px]" />
@@ -119,8 +119,7 @@ function Philosophy() {
         <div className="mt-12 grid gap-6 sm:grid-cols-2">
           {philosophy.quotes.map((quote, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: 0.3 + i * 0.08, ease }}
-              className="overflow-hidden border border-gray-100 bg-white p-6 transition-all duration-300 hover:shadow-lg hover:shadow-black/5"
-              className="nw-card-sm">
+              className="nw-card-sm overflow-hidden border border-gray-100 bg-white p-6 transition-all duration-300 hover:shadow-lg hover:shadow-black/5">
               <p className="text-sm font-medium italic text-[#1A2332] leading-relaxed" style={{ fontFamily: "'DM Sans', sans-serif" }}>
                 &ldquo;{quote}&rdquo;
               </p>
@@ -150,18 +149,18 @@ function ConnectCTA() {
         <motion.div initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: 0.15, ease }}
           className="flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a href="https://linkedin.com/in/kathrynchoquer" target="_blank" rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2 bg-[#1A2332] px-7 py-4 text-sm font-semibold text-white transition-all duration-300 hover:bg-[#2A3B4E]"
-            className="nw-card-sm" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+            className="nw-card-sm group inline-flex items-center gap-2 bg-[#1A2332] px-7 py-4 text-sm font-semibold text-white transition-all duration-300 hover:bg-[#2A3B4E]"
+            style={{ fontFamily: "'DM Sans', sans-serif" }}>
             <Linkedin className="h-4 w-4" /> LinkedIn
           </a>
           <a href="mailto:kathryn@numberswest.com"
-            className="inline-flex items-center gap-2 border-2 border-gray-200 bg-white px-7 py-4 text-sm font-semibold text-[#1A2332] transition-all duration-300 hover:border-[#5088B8] hover:text-[#5088B8]"
-            className="nw-card-sm" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+            className="nw-card-sm inline-flex items-center gap-2 border-2 border-gray-200 bg-white px-7 py-4 text-sm font-semibold text-[#1A2332] transition-all duration-300 hover:border-[#5088B8] hover:text-[#5088B8]"
+            style={{ fontFamily: "'DM Sans', sans-serif" }}>
             <Mail className="h-4 w-4" /> Email
           </a>
           <Link to="/numbers-west/contact"
-            className="group inline-flex items-center gap-2 bg-[#5088B8] px-7 py-4 text-sm font-semibold text-white transition-all duration-200 hover:bg-[#4078A8]"
-            className="nw-card-sm" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+            className="nw-card-sm group inline-flex items-center gap-2 bg-[#5088B8] px-7 py-4 text-sm font-semibold text-white transition-all duration-200 hover:bg-[#4078A8]"
+            style={{ fontFamily: "'DM Sans', sans-serif" }}>
             Book a Call <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
           </Link>
         </motion.div>

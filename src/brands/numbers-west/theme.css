@@ -21,6 +21,31 @@
   background-color: var(--color-surface);
   scroll-behavior: smooth;
   overflow-x: hidden;
+  font-size: 16px;
+}
+
+/* Bump body text size on mobile for readability */
+[data-brand="numbers-west"] p,
+[data-brand="numbers-west"] span,
+[data-brand="numbers-west"] li,
+[data-brand="numbers-west"] label,
+[data-brand="numbers-west"] a {
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (max-width: 639px) {
+  [data-brand="numbers-west"] .text-sm {
+    font-size: 0.9375rem; /* 15px instead of 14px */
+    line-height: 1.6;
+  }
+  [data-brand="numbers-west"] .text-xs {
+    font-size: 0.8125rem; /* 13px instead of 12px */
+    line-height: 1.5;
+  }
+  [data-brand="numbers-west"] .text-base {
+    font-size: 1.0625rem; /* 17px instead of 16px */
+    line-height: 1.7;
+  }
 }
 
 @media (min-width: 768px) {

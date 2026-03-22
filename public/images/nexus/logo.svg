@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+  </defs>
+  <text x="0" y="30" font-family="'Space Grotesk', Arial, sans-serif" font-weight="700" font-size="28" fill="white" letter-spacing="-0.5">NEXUS</text>
+  <circle cx="120" cy="22" r="4" fill="url(#grad)"/>
+</svg>

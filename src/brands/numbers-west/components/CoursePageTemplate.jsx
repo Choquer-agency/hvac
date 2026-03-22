@@ -123,8 +123,8 @@ function CourseArgument({ course }) {
     <section ref={ref} className="px-4 sm:px-6 py-16 lg:py-24">
       <div className="mx-auto max-w-7xl">
         <motion.div initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7, ease }}
-          className="relative overflow-hidden bg-[#1A2332] px-8 py-14 sm:px-16 sm:py-18"
-          className="nw-dark-card">
+          className="nw-dark-card relative overflow-hidden px-6 py-10 sm:px-16 sm:py-14"
+          style={{ backgroundColor: "#1A2332" }}>
           <div className="pointer-events-none absolute" style={{ top: 79, right: -1, width: SQRT(80), height: 2, backgroundColor: "rgba(80,136,184,0.3)", transformOrigin: "top right", transform: "rotate(45deg)" }} />
           <div className="pointer-events-none absolute right-0 top-0 h-[400px] w-[400px] rounded-full bg-[#5088B8]/10 blur-[120px]" />
           <div className="relative mx-auto max-w-3xl">
@@ -165,11 +165,10 @@ function CourseAgenda({ course }) {
               initial={{ opacity: 0, y: 40 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: bi * 0.12, ease }}
-              className="overflow-hidden border border-gray-100 bg-white transition-all duration-500"
-              className="nw-card"
+              className="nw-card overflow-hidden border border-gray-100 bg-white transition-all duration-500"
             >
               {/* Day header */}
-              <div className="bg-[#1A2332] px-6 py-5">
+              <div className="px-6 py-5" style={{ backgroundColor: "#1A2332" }}>
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-semibold tracking-wider text-white/40 uppercase">{block.day}</span>
                 </div>
@@ -237,12 +236,11 @@ function CourseCurriculum({ course }) {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: i * 0.08, ease }}
-              className="overflow-hidden border border-gray-100 bg-white transition-all duration-500 hover:shadow-xl hover:shadow-black/5"
-              className="nw-card"
+              className="nw-card overflow-hidden border border-gray-100 bg-white transition-all duration-500 hover:shadow-xl hover:shadow-black/5"
             >
               <div className="flex flex-col md:flex-row">
                 {/* Left: Module info */}
-                <div className="bg-[#1A2332] px-6 py-5 md:w-64 md:flex-shrink-0 flex flex-col justify-center">
+                <div className="px-6 py-5 md:w-64 md:flex-shrink-0 flex flex-col justify-center" style={{ backgroundColor: "#1A2332" }}>
                   <span className="text-xs font-semibold text-white/40 tracking-wider uppercase">Module {i + 1}</span>
                   <h3 className="mt-1 text-lg font-semibold text-white" style={{ fontFamily: "'DM Sans', sans-serif" }}>{mod.title}</h3>
                   <span className="mt-2 text-xs text-white/30">{mod.duration}</span>
@@ -288,8 +286,7 @@ function CourseAudience({ course }) {
         <div className="grid gap-6 sm:grid-cols-2">
           {course.whoItsFor.map((item, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: i * 0.1, ease }}
-              className="group flex items-start gap-4 overflow-hidden border border-gray-100 bg-white p-6 transition-all duration-300 hover:shadow-lg hover:shadow-black/5 hover:-translate-y-0.5"
-              className="nw-card-sm">
+              className="nw-card-sm group flex items-start gap-4 overflow-hidden border border-gray-100 bg-white p-6 transition-all duration-300 hover:shadow-lg hover:shadow-black/5 hover:-translate-y-0.5">
               <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl bg-[#5088B8]/10">
                 <CheckCircle2 className="h-5 w-5 text-[#5088B8]" />
               </div>
@@ -323,8 +320,7 @@ function CourseFormat({ course }) {
         <div className="grid gap-8 lg:grid-cols-5">
           {/* Details card */}
           <motion.div initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7, delay: 0.1, ease }}
-            className="overflow-hidden border border-gray-100 bg-white lg:col-span-2"
-            className="nw-card">
+            className="nw-card overflow-hidden border border-gray-100 bg-white lg:col-span-2">
             <div className="p-8">
               <h3 className="mb-6 text-xl font-semibold text-[#1A2332]" style={{ fontFamily: "'DM Sans', sans-serif" }}>Course Details</h3>
               <div className="space-y-5">
@@ -346,8 +342,7 @@ function CourseFormat({ course }) {
 
           {/* What's included */}
           <motion.div initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7, delay: 0.2, ease }}
-            className="overflow-hidden border border-gray-100 bg-white lg:col-span-3"
-            className="nw-card">
+            className="nw-card overflow-hidden border border-gray-100 bg-white lg:col-span-3">
             <div className="relative">
               <div className="pointer-events-none absolute z-10" style={{ top: 49, right: -1, width: SQRT(50), height: 2, backgroundColor: "#E5E7EB", transformOrigin: "top right", transform: "rotate(45deg)" }} />
             </div>
@@ -398,8 +393,7 @@ function FAQItem({ item, index, inView }) {
   const [open, setOpen] = useState(false);
   return (
     <motion.div initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5, delay: index * 0.06, ease }}
-      className={`overflow-hidden border bg-white transition-all duration-300 ${open ? "border-[#5088B8]/30 shadow-lg shadow-black/5" : "border-gray-100 hover:shadow-md"}`}
-      className="nw-card-sm">
+      className={`nw-card-sm overflow-hidden border bg-white transition-all duration-300 ${open ? "border-[#5088B8]/30 shadow-lg shadow-black/5" : "border-gray-100 hover:shadow-md"}`}>
       <button onClick={() => setOpen(!open)} className="flex w-full items-center justify-between px-6 py-5 text-left">
         <span className="text-sm font-semibold text-[#1A2332] pr-4" style={{ fontFamily: "'DM Sans', sans-serif" }}>{item.q}</span>
         <span className={`text-lg text-[#8A9BB0] transition-transform duration-200 flex-shrink-0 ${open ? "rotate-45" : ""}`}>+</span>
@@ -433,8 +427,7 @@ function WaitlistForm({ course }) {
         </motion.div>
 
         <motion.div initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7, delay: 0.15, ease }}
-          className="mx-auto max-w-2xl overflow-hidden border border-gray-100 bg-white"
-          className="nw-card">
+          className="nw-card mx-auto max-w-2xl overflow-hidden border border-gray-100 bg-white">
           <div className="p-8 sm:p-10">
             <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
               <div className="grid gap-5 sm:grid-cols-2">
@@ -471,8 +464,8 @@ function WaitlistForm({ course }) {
               </div>
 
               <button type="submit"
-                className="group inline-flex w-full items-center justify-center gap-2 bg-[#1A2332] text-sm font-semibold text-white transition-all duration-300 hover:bg-[#2A3B4E]"
-                className="nw-card-sm" style={{ minHeight: "52px" }}>
+                className="nw-card-sm group inline-flex w-full items-center justify-center gap-2 bg-[#1A2332] text-sm font-semibold text-white transition-all duration-300 hover:bg-[#2A3B4E]"
+                style={{ minHeight: "52px" }}>
                 Join the Waitlist <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </button>
             </form>
@@ -491,8 +484,8 @@ function CourseCTA() {
   return (
     <section ref={ref} className="px-4 sm:px-6 pt-8 pb-16">
       <motion.div initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7, ease }}
-        className="relative mx-auto max-w-7xl overflow-hidden bg-[#1A2332] px-8 py-14 sm:px-16 sm:py-18"
-        className="nw-dark-card">
+        className="nw-dark-card relative mx-auto max-w-7xl overflow-hidden px-6 py-10 sm:px-16 sm:py-14"
+        style={{ backgroundColor: "#1A2332" }}>
         <div className="pointer-events-none absolute" style={{ top: 79, right: -1, width: SQRT(80), height: 2, backgroundColor: "rgba(80,136,184,0.3)", transformOrigin: "top right", transform: "rotate(45deg)" }} />
         <div className="pointer-events-none absolute right-0 top-0 h-[400px] w-[400px] rounded-full bg-[#5088B8]/10 blur-[120px]" />
         <div className="relative mx-auto max-w-4xl text-center">

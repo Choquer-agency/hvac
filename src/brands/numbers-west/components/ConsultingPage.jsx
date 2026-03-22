@@ -120,7 +120,8 @@ function HowItWorks({ steps }) {
               initial={{ opacity: 0, y: 40 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: i * 0.12, ease }}
-              className={`nw-card overflow-hidden border border-gray-100 p-6 transition-all duration-500 hover:shadow-xl hover:shadow-black/5 sm:p-8 ${i === 1 ? "bg-[#1A2332] text-white border-[#1A2332]" : "bg-white"}`}
+              className={`nw-card overflow-hidden border border-gray-100 p-6 transition-all duration-500 hover:shadow-xl hover:shadow-black/5 sm:p-8 ${i === 1 ? "text-white border-[#1A2332]" : "bg-white"}`}
+              style={i === 1 ? { backgroundColor: "#1A2332" } : undefined}
             >
               <span className={`text-5xl font-bold ${i === 1 ? "text-white/10" : "text-gray-100"}`} style={{ fontFamily: "'DM Sans', sans-serif" }}>
                 0{step.step}
@@ -146,8 +147,8 @@ function ConsultingCTA() {
   return (
     <section ref={ref} className="px-4 sm:px-6 pt-8 pb-16">
       <motion.div initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7, ease }}
-        className="relative mx-auto max-w-7xl overflow-hidden bg-[#1A2332] px-8 py-14 sm:px-16 sm:py-18"
-        className="nw-dark-card">
+        className="nw-dark-card relative mx-auto max-w-7xl overflow-hidden px-6 py-10 sm:px-16 sm:py-14"
+        style={{ backgroundColor: "#1A2332" }}>
         <div className="pointer-events-none absolute" style={{ top: 79, right: -1, width: SQRT(80), height: 2, backgroundColor: "rgba(80,136,184,0.3)", transformOrigin: "top right", transform: "rotate(45deg)" }} />
         <div className="pointer-events-none absolute right-0 top-0 h-[400px] w-[400px] rounded-full bg-[#5088B8]/10 blur-[120px]" />
         <div className="relative mx-auto max-w-4xl text-center">

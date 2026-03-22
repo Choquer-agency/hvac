@@ -35,8 +35,8 @@ export default function ContentPage() {
 
         {/* Newsletter-style card */}
         <motion.div initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7, delay: 0.4, ease }}
-          className="relative mt-16 overflow-hidden bg-[#1A2332] px-8 py-14 sm:px-16 sm:py-18"
-          className="nw-dark-card">
+          className="nw-dark-card relative mt-12 overflow-hidden px-6 py-10 sm:mt-16 sm:px-16 sm:py-14"
+          style={{ backgroundColor: "#1A2332" }}>
           <div className="pointer-events-none absolute" style={{ top: 79, right: -1, width: SQRT(80), height: 2, backgroundColor: "rgba(80,136,184,0.3)", transformOrigin: "top right", transform: "rotate(45deg)" }} />
           <div className="pointer-events-none absolute right-0 top-0 h-[400px] w-[400px] rounded-full bg-[#5088B8]/10 blur-[120px]" />
 
